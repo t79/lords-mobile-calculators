@@ -1,0 +1,591 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --input-border: 0.15em solid black;
+     /*#f2f3f5;*/
+    /* --color-white: #fcfafc; */
+}
+
+html, div {
+    padding: 0;
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background-color: #fdf9f6;
+    color: #1e201d;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    font-family: Futura, Trebuchet MS, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.075rem;
+    
+    --primary-color: #1e201d;
+
+    --header-primary-color: white;
+    --header-secound-color-a: #000080;
+    --header-secound-color-b: white;
+
+    --color-white: #f3f3f3;
+    --color-top-main-boarder: #ffffffaa;
+
+    --reset-color: white;
+
+    --footer-text-color: #000080;
+    --footer-link-color: #5959ff;
+    --footer-img-invert: invert(0);
+
+    --content-width: min(calc(40rem + 25vw), min(98vw, calc(100vw - env(safe-area-inset-left) - env(safe-area-inset-right))));
+
+    
+
+}
+
+.dark-mode {
+    background-color: #0c0d0d;
+    color: #cccccc;
+
+    --primary-color: #cccccc;
+
+    --color-white: #1e1e1e;
+    --color-top-main-boarder: #1e1e1e99;
+
+    --header-secound-color-b: #000080;
+    --header-secound-color-a: white;
+
+    --reset-color: black;
+
+    --footer-text-color: white;
+    --footer-link-color: #c8c8cd;
+    --footer-img-invert: invert(1);
+
+}
+
+
+.clear-container span {
+    border: 0px solid #c3cde6;
+    border-radius: 0.2rem;
+    color: var(--reset-color);
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    font-size: 0.9em;
+    cursor: default;
+}
+
+#content-container {
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: hidden;
+}
+
+#content-column {
+    width: min(calc(40rem + 25vw), min(98vw, calc(100vw - env(safe-area-inset-left) - env(safe-area-inset-right))));
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.top-header-column {
+    width: var(--content-width);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start; 
+}
+
+#top-header-top {
+    align-items: flex-start;
+}
+
+#top-header-bottom {
+    align-items: flex-start;
+}
+
+#top-banner {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    margin: 0;
+    background-size: 100% auto;
+}
+
+h1 {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    color: var(--header-primary-color);
+    padding: 2rem 0 2rem 0.3rem;
+    margin: 0;
+}
+
+h1 span {
+    color: var(--header-secound-color-a);
+    background-color: var(--header-secound-color-b);
+    font-size: 1.8rem;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    white-space: nowrap;
+}
+
+
+
+
+#top-first-line {
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+}
+
+
+
+#top-column {
+    width: min(calc(40rem + 25vw), 95vw);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.horizontal-content-center {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+main {
+    position:relative;
+    padding-top: 3rem;
+}
+
+
+#dark-light-mode {
+    float: right;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 1rem;
+    margin-bottom: auto;
+}
+
+#dark-light-mode span{
+    align-self: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin: 0.1rem 1rem 0 0;
+    border-radius: 0.2rem;
+}
+
+#dark-light-mode-label {
+    padding-top: 0.5rem;
+}
+
+#dark-light-mode-frame {
+    width: 1.5rem;
+}
+
+#dark-light-mode-frame img {
+    width: 100%;
+    height: auto;
+    /*background-color: #333333; */
+    /*border: 0.1em solid black;*/
+    border-radius: 0.2rem;
+    padding: 0.3rem;
+}
+
+#colorful span {
+    width: 0.6rem;
+    height: 0.5rem;
+    background-color: #868689;
+    margin: 0.1rem;
+}
+
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0.5rem;
+}
+
+
+
+#active-page-nav {
+    background-color: #ffffff00;
+    opacity: 0.5;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.3rem;
+    color: var(--header-primary-color);
+}
+
+nav li {
+    display: table-cell;
+    padding: 0;
+    margin-right: 0.8rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+#main-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-width: 6rem;
+    color: white;/* var(--header-secound-color-a); */
+    text-align: center;
+    line-height: 1.2rem;
+    border-radius: 0.3rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    background-color: #00000088; /* var(--header-secound-color-b); */
+}
+
+#main-nav {
+    padding: 2rem 0rem 1.5rem 0.1rem;
+    margin: 0;
+    align-self: flex-start;
+}
+
+#main-nav li {
+    font-size: 0.85rem;
+}
+
+#main-nav div {
+    background-color: #ffffffaa;
+    padding: 0.3rem;
+    margin: 0;
+    text-align: center;
+    color: #000080;
+}
+
+.icon-new-parent {
+    position: relative;
+}
+
+.icon-new {
+    position: absolute;
+    top: -0.5rem;
+    right: -1.3rem;
+    width: 2rem;
+    height: auto;
+}
+
+#internal-nav a {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+#internal-nav {
+    padding: 3rem 0 1rem 0;
+    justify-self: flex-start;
+    margin-right: auto;
+}
+
+#internal-nav li {
+    padding: 0.34rem;
+    padding-top: 0.5rem;
+}
+
+
+
+.type-value-container input {
+    font-family: Futura, Trebuchet MS, Helvetica, Arial, sans-serif;
+    letter-spacing: 0.06rem;
+    background-color: #989cc122;
+    background-repeat: no-repeat;
+    background-size: auto 30%;
+    background-position: 0.3rem 0.3rem;
+    padding: 1rem 0.5rem 0.2rem 0.3rem;
+    border: 0.2rem solid #e6e6fa00;
+    border-bottom: 0px solid #1e201d;
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0.2rem 0 0.2rem 0;
+    text-align: right;
+    color: white;
+    letter-spacing: 0.18rem;
+}
+
+.type-value-container input::placeholder {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 100;
+    text-align: left;
+    letter-spacing: 0.01rem;
+}
+
+
+main p {
+    font-size: 1rem;
+}
+
+p, footer span {
+    margin: 1rem 2rem;
+}
+
+#bottom-text-block {
+    margin-top: 5rem;
+    width: min(100%, 45rem);
+    align-self: center;
+}
+
+footer {
+    width: var(--content-width);
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+footer p, footer span{
+    font-size: 0.85rem;
+    color: var(--footer-text-color);
+}
+
+footer a {
+    color: var(--footer-link-color);
+}
+
+footer img {
+    height: 1.2rem;
+    width: auto;
+}
+
+#footer-last-line {
+    margin-top: 5rem;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+}
+
+#footer-send-message {
+    float: right;
+}
+
+#footer-pride {
+    justify-self: flex-start;
+    margin-left: 0;
+    margin-right: auto;
+    padding: 0 8rem 0 0;
+    background-image: url(/assets/love2.png);
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+}
+
+#pride {
+    display: inline-block;
+    background-color: #ffffffaa;
+    margin: 0;
+    padding: 1rem;
+}
+
+#pride span {
+    color: black;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+}
+
+
+#bottom-image {
+	width: 100vw;
+	height: auto;
+	object-fit: cover;
+	display: block;
+	overflow: hidden;
+    opacity: 1;
+}
+
+#bottom-image-container {
+    position: relative;
+    /* padding-bottom: 1.5rem;
+    background-image: url(assets/love2.png);
+    background-repeat: repeat-x;
+    background-size: auto 1.5rem;
+    background-position: bottom; */
+}
+
+#bottom-image-container span {
+    position: absolute;
+    left: 2rem;
+    bottom: 2.5rem;
+    color: white;
+    font-family: "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+
+#top-header {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    margin: 0;
+    background-size: 100% auto;
+    opacity: 1;
+}
+
+#day-night-toggle {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+#github-logo {
+    height:1.2rem;
+    margin-left:0.2rem;
+    vertical-align:text-bottom;
+    filter: var(--footer-img-invert);
+}
+
+
+
+@media only screen and (max-width: 450px) {
+    html {
+        font-size: 14px;
+    }
+    input {
+        width: 5rem;
+        letter-spacing: 0rem;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    html {
+        font-size: 14.3px;
+    }
+    input {
+        width: 5rem;
+        letter-spacing: 0rem;
+    }
+}
+
+@media only screen and (min-width: 520px) {
+    html {
+        font-size: 14.6px;
+    }
+    input {
+        width: 5rem;
+        letter-spacing: 0rem;
+    }
+}
+
+@media only screen and (min-width: 590px) {
+    html {
+        font-size: 15px;
+    }
+    input {
+        width: 5rem;
+        letter-spacing: 0rem;
+    }
+}
+
+@media only screen and (min-width: 620px) {
+    html {
+        font-size: 15px;
+    }
+    input {
+        width: 6rem;
+        letter-spacing: 0.15rem;
+    }
+}
+
+@media only screen and (min-width: 710px) {
+    html {
+        font-size: 15.7px;
+    }
+    input {
+        width: 6rem;
+        letter-spacing: 0.15rem;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    html {
+        font-size: 16px;
+    }
+    input {
+        width: 6rem;
+        letter-spacing: 0.15rem;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    html {
+        font-size: 16px;
+    }
+    input {
+        width: 6rem;
+        letter-spacing: 0.15rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    html {
+        font-size: 16.2px;
+    }
+    input {
+        width: 8rem;
+        letter-spacing: 0.2rem;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    html {
+        font-size: 16.5px;
+    }
+    input {
+        width: 8rem;
+        letter-spacing: 0.2rem;
+    }
+}
+
+@media only screen and (min-width: 1430px) {
+    html {
+        font-size: 16.75px;
+    }
+    input {
+        width: 8rem;
+        letter-spacing: 0.2rem;
+    }
+}
+
+@media only screen and (min-width: 1650px) {
+    html {
+        font-size: 17px;
+    }
+    input {
+        width: 8rem;
+        letter-spacing: 0.2rem;
+    }
+}

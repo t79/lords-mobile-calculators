@@ -1,0 +1,1272 @@
+
+body {
+
+    /* #d9d1c5; */
+    --main-background-color: #97805a11;
+    --grid-background-color: #97805a33;
+    --grid-border-color: #ccc3ba; 
+
+}
+
+.dark-mode {
+
+    /* #443c31 */
+    
+    --main-background-color: #97805a22;
+    --grid-background-color: #97805a33;
+    --grid-border-color: #1c1914;
+}
+
+body {
+    
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.img-frame {
+    width: 100%
+}
+
+
+.column-helmet {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.column-helmet-compact-img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.column-helmet-compact-title {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+.column-armor {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.column-armor-compact-img {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.column-armor-compact-title {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.column-legs {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.column-legs-compact-img {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+.column-legs-compact-title {
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+
+.column-main-hand {
+    grid-column-start: 7;
+    grid-column-end: 9;
+}
+
+.column-main-hand-compact-img {
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
+
+.column-main-hand-compact-title {
+    grid-column-start: 8;
+    grid-column-end: 9;
+}
+
+.column-off-hand {
+    grid-column-start: 9;
+    grid-column-end: 11;
+}
+
+.column-off-hand-compact-img {
+    grid-column-start: 9;
+    grid-column-end: 10;
+}
+
+.column-off-hand-compact-title {
+    grid-column-start: 10;
+    grid-column-end: 11;
+}
+
+.column-accessory {
+    grid-column-start: 11;
+    grid-column-end: 13;
+}
+
+.column-accessory-compact-img {
+    grid-column-start: 11;
+    grid-column-end: 12;
+}
+
+.column-accessory-compact-title {
+    grid-column-start: 12;
+    grid-column-end: 13;
+}
+
+.column-title {
+    grid-column-start: 13;
+    grid-column-end: 14;
+}
+
+.row-header {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.row-header-img {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.row-header-title {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.row-serpent-gladiator {
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.row-serpent-gladiator-img {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.row-serpent-gladiator-title-compact {
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.row-serpent-gladiator-title-1 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.row-serpent-gladiator-title-2 {
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.row-serpent-gladiator-spec {
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+
+.row-artic-flipper {
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.row-artic-flipper-img {
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.row-artic-flipper-title-compact {
+    grid-row-start: 6;
+    grid-row-end: 8;
+}
+
+.row-artic-flipper-title-1 {
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.row-artic-flipper-title-2 {
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+
+.row-artic-flipper-spec {
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+
+
+.row-necrosis {
+    grid-row-start: 9;
+    grid-row-end: 12;
+}
+
+.row-necrosis-img {
+    grid-row-start: 9;
+    grid-row-end: 10;
+}
+
+.row-necrosis-title-compact {
+    grid-row-start: 9;
+    grid-row-end: 11;
+}
+
+.row-necrosis-title-1 {
+    grid-row-start: 10;
+    grid-row-end: 11;
+}
+
+.row-necrosis-title-2 {
+    grid-row-start: 10;
+    grid-row-end: 12;
+}
+
+.row-necrosis-spec {
+    grid-row-start: 11;
+    grid-row-end: 12;
+}
+
+
+.row-gawrilla {
+    grid-row-start: 12;
+    grid-row-end: 15;
+}
+
+.row-gawrilla-img {
+    grid-row-start: 12;
+    grid-row-end: 13;
+}
+
+.row-gawrilla-title-compact {
+    grid-row-start: 12;
+    grid-row-end: 14;
+}
+
+.row-gawrilla-title-1 {
+    grid-row-start: 13;
+    grid-row-end: 14;
+}
+
+.row-gawrilla-title-2 {
+    grid-row-start: 13;
+    grid-row-end: 15;
+}
+
+.row-gawrilla-spec {
+    grid-row-start: 14;
+    grid-row-end: 15;
+}
+
+
+.row-cottageroar {
+    grid-row-start: 15;
+    grid-row-end: 18;
+}
+
+.row-cottageroar-img {
+    grid-row-start: 15;
+    grid-row-end: 16;
+}
+
+.row-cottageroar-title-compact {
+    grid-row-start: 15;
+    grid-row-end: 17;
+}
+
+.row-cottageroar-title-1 {
+    grid-row-start: 16;
+    grid-row-end: 17;
+}
+
+.row-cottageroar-title-2 {
+    grid-row-start: 16;
+    grid-row-end: 18;
+}
+
+.row-cottageroar-spec {
+    grid-row-start: 17;
+    grid-row-end: 18;
+}
+
+
+
+
+.row-hootclaw {
+    grid-row-start: 18;
+    grid-row-end: 21;
+}
+
+.row-hootclaw-img {
+    grid-row-start: 18;
+    grid-row-end: 19;
+}
+
+.row-hootclaw-title-compact {
+    grid-row-start: 18;
+    grid-row-end: 20;
+}
+
+.row-hootclaw-title-1 {
+    grid-row-start: 19;
+    grid-row-end: 20;
+}
+
+.row-hootclaw-title-2 {
+    grid-row-start: 19;
+    grid-row-end: 21;
+}
+
+.row-hootclaw-spec {
+    grid-row-start: 20;
+    grid-row-end: 21;
+}
+
+
+.row-tidal-titan {
+    grid-row-start: 21;
+    grid-row-end: 24;
+}
+
+.row-tidal-titan-img {
+    grid-row-start: 21;
+    grid-row-end: 22;
+}
+
+.row-tidal-titan-title-compact {
+    grid-row-start: 21;
+    grid-row-end: 23;
+}
+
+.row-tidal-titan-title-1 {
+    grid-row-start: 22;
+    grid-row-end: 23;
+}
+
+.row-tidal-titan-title-2 {
+    grid-row-start: 22;
+    grid-row-end: 24;
+}
+
+.row-tidal-titan-spec {
+    grid-row-start: 23;
+    grid-row-end: 24;
+}
+
+
+.row-bon-appeti {
+    grid-row-start: 24;
+    grid-row-end: 27;
+}
+
+.row-bon-appeti-img {
+    grid-row-start: 24;
+    grid-row-end: 25;
+}
+
+.row-bon-appeti-title-compact {
+    grid-row-start: 24;
+    grid-row-end: 26;
+}
+
+.row-bon-appeti-title-1 {
+    grid-row-start: 25;
+    grid-row-end: 26;
+}
+
+.row-bon-appeti-title-2 {
+    grid-row-start: 25;
+    grid-row-end: 27;
+}
+
+.row-bon-appeti-spec {
+    grid-row-start: 26;
+    grid-row-end: 27;
+}
+
+
+
+.row-queen-bee {
+    grid-row-start: 27;
+    grid-row-end: 30;
+}
+
+.row-queen-bee-img {
+    grid-row-start: 27;
+    grid-row-end: 28;
+}
+
+.row-queen-bee-title-compact {
+    grid-row-start: 27;
+    grid-row-end: 29;
+}
+
+.row-queen-bee-title-1 {
+    grid-row-start: 28;
+    grid-row-end: 29;
+}
+
+.row-queen-bee-title-2 {
+    grid-row-start: 28;
+    grid-row-end: 30;
+}
+
+.row-queen-bee-spec {
+    grid-row-start: 29;
+    grid-row-end: 30;
+}
+
+
+.row-mecha-trojan {
+    grid-row-start: 31;
+    grid-row-end: 34;
+}
+
+.row-mecha-trojan-img {
+    grid-row-start: 31;
+    grid-row-end: 32;
+}
+
+.row-mecha-trojan-title-compact {
+    grid-row-start: 31;
+    grid-row-end: 33;
+}
+
+.row-mecha-trojan-title-1 {
+    grid-row-start: 32;
+    grid-row-end: 33;
+}
+
+.row-mecha-trojan-title-2 {
+    grid-row-start: 32;
+    grid-row-end: 34;
+}
+
+.row-mecha-trojan-spec {
+    grid-row-start: 33;
+    grid-row-end: 34;
+}
+
+
+.row-blackwing {
+    grid-row-start: 34;
+    grid-row-end: 37;
+}
+
+.row-blackwing-img {
+    grid-row-start: 34;
+    grid-row-end: 35;
+}
+
+.row-blackwing-title-compact {
+    grid-row-start: 34;
+    grid-row-end: 36;
+}
+
+.row-blackwing-title-1 {
+    grid-row-start: 35;
+    grid-row-end: 36;
+}
+
+.row-blackwing-title-2 {
+    grid-row-start: 35;
+    grid-row-end: 37;
+}
+
+.row-blackwing-spec {
+    grid-row-start: 36;
+    grid-row-end: 37;
+}
+
+
+
+.row-saberfang {
+    grid-row-start: 37;
+    grid-row-end: 40;
+}
+
+.row-saberfang-img {
+    grid-row-start: 37;
+    grid-row-end: 38;
+}
+
+.row-saberfang-title-compact {
+    grid-row-start: 37;
+    grid-row-end: 39;
+}
+
+.row-saberfang-title-1 {
+    grid-row-start: 38;
+    grid-row-end: 39;
+}
+
+.row-saberfang-title-2 {
+    grid-row-start: 38;
+    grid-row-end: 40;
+}
+
+.row-saberfang-spec {
+    grid-row-start: 39;
+    grid-row-end: 40;
+}
+
+
+
+.row-grim-reaper {
+    grid-row-start: 40;
+    grid-row-end: 43;
+}
+
+.row-grim-reaper-img {
+    grid-row-start: 40;
+    grid-row-end: 41;
+}
+
+.row-grim-reaper-title-compact {
+    grid-row-start: 40;
+    grid-row-end: 42;
+}
+
+.row-grim-reaper-title-1 {
+    grid-row-start: 41;
+    grid-row-end: 42;
+}
+
+.row-grim-reaper-title-2 {
+    grid-row-start: 41;
+    grid-row-end: 43;
+}
+
+.row-grim-reaper-spec {
+    grid-row-start: 42;
+    grid-row-end: 43;
+}
+
+
+
+.row-hell-drider{
+    grid-row-start: 43;
+    grid-row-end: 46;
+}
+
+.row-hell-drider-img {
+    grid-row-start: 43;
+    grid-row-end: 44;
+}
+
+.row-hell-drider-title-compact {
+    grid-row-start: 43;
+    grid-row-end: 45;
+}
+
+.row-hell-drider-title-1 {
+    grid-row-start: 44;
+    grid-row-end: 45;
+}
+
+.row-hell-drider-title-2 {
+    grid-row-start: 44;
+    grid-row-end: 46;
+}
+
+.row-hell-drider-spec {
+    grid-row-start: 45;
+    grid-row-end: 46;
+}
+
+
+
+.row-mega-maggot{
+    grid-row-start: 46;
+    grid-row-end: 49;
+}
+
+.row-mega-maggot-img {
+    grid-row-start: 46;
+    grid-row-end: 47;
+}
+
+.row-mega-maggot-title-compact {
+    grid-row-start: 46;
+    grid-row-end: 48;
+}
+
+.row-mega-maggot-title-1 {
+    grid-row-start: 47;
+    grid-row-end: 48;
+}
+
+.row-mega-maggot-title-2 {
+    grid-row-start: 47;
+    grid-row-end: 49;
+}
+
+.row-mega-maggot-spec {
+    grid-row-start: 48;
+    grid-row-end: 49;
+}
+
+
+
+.row-gargantua{
+    grid-row-start: 49;
+    grid-row-end: 52;
+}
+
+.row-gargantua-img {
+    grid-row-start: 49;
+    grid-row-end: 50;
+}
+
+.row-gargantua-title-compact {
+    grid-row-start: 49;
+    grid-row-end: 51;
+}
+
+.row-gargantua-title-1 {
+    grid-row-start: 50;
+    grid-row-end: 51;
+}
+
+.row-gargantua-title-2 {
+    grid-row-start: 50;
+    grid-row-end: 52;
+}
+
+.row-gargantua-spec {
+    grid-row-start: 51;
+    grid-row-end: 52;
+}
+
+
+
+.row-terrorthorn{
+    grid-row-start: 52;
+    grid-row-end: 55;
+}
+
+.row-terrorthorn-img {
+    grid-row-start: 52;
+    grid-row-end: 53;
+}
+
+.row-terrorthorn-title-compact {
+    grid-row-start: 52;
+    grid-row-end: 54;
+}
+
+.row-terrorthorn-title-1 {
+    grid-row-start: 53;
+    grid-row-end: 54;
+}
+
+.row-terrorthorn-title-2 {
+    grid-row-start: 53;
+    grid-row-end: 55;
+}
+
+.row-terrorthorn-spec {
+    grid-row-start: 54;
+    grid-row-end: 55;
+}
+
+
+.row-jade-wyrm {
+    grid-row-start: 55;
+    grid-row-end: 58;
+}
+
+.row-jade-wyrm-img {
+    grid-row-start: 55;
+    grid-row-end: 56;
+}
+
+.row-jade-wyrm-title-compact {
+    grid-row-start: 55;
+    grid-row-end: 57;
+}
+
+.row-jade-wyrm-title-1 {
+    grid-row-start: 56;
+    grid-row-end: 57;
+}
+
+.row-jade-wyrm-title-2 {
+    grid-row-start: 56;
+    grid-row-end: 58;
+}
+
+.row-jade-wyrm-spec {
+    grid-row-start: 57;
+    grid-row-end: 58;
+}
+
+
+
+.row-snow-beast {
+    grid-row-start: 58;
+    grid-row-end: 61;
+}
+
+.row-snow-beast-img {
+    grid-row-start: 58;
+    grid-row-end: 59;
+}
+
+.row-snow-beast-title-compact {
+    grid-row-start: 58;
+    grid-row-end: 60;
+}
+
+.row-snow-beast-title-1 {
+    grid-row-start: 59;
+    grid-row-end: 60;
+}
+
+.row-snow-beast-title-2 {
+    grid-row-start: 59;
+    grid-row-end: 61;
+}
+
+.row-snow-beast-spec {
+    grid-row-start: 60;
+    grid-row-end: 61;
+}
+
+
+
+.row-frostwing {
+    grid-row-start: 61;
+    grid-row-end: 64;
+}
+
+.row-frostwing-img {
+    grid-row-start: 61;
+    grid-row-end: 62;
+}
+
+.row-frostwing-title-compact {
+    grid-row-start: 61;
+    grid-row-end: 63;
+}
+
+.row-frostwing-title-1 {
+    grid-row-start: 62;
+    grid-row-end: 63;
+}
+
+.row-frostwing-title-2 {
+    grid-row-start: 62;
+    grid-row-end: 64;
+}
+
+.row-frostwing-spec {
+    grid-row-start: 63;
+    grid-row-end: 64;
+}
+
+
+
+.row-champion {
+    grid-row-start: 65;
+    grid-row-end: 74;
+}
+
+.row-champion-l1 {
+    grid-row-start: 65;
+    grid-row-end: 68;
+}
+
+.row-champion-l1-img {
+    grid-row-start: 65;
+    grid-row-end: 66;
+}
+
+.row-champion-l1-title-compact {
+    grid-row-start: 65;
+    grid-row-end: 67;
+}
+
+.row-champion-l1-title-1 {
+    grid-row-start: 66;
+    grid-row-end: 67;
+}
+
+.row-champion-l1-title-2 {
+    grid-row-start: 66;
+    grid-row-end: 68;
+}
+
+.row-champion-l1-spec {
+    grid-row-start: 67;
+    grid-row-end: 68;
+}
+
+
+.row-champion-l2 {
+    grid-row-start: 68;
+    grid-row-end: 71;
+}
+
+.row-champion-l2-img {
+    grid-row-start: 68;
+    grid-row-end: 69;
+}
+
+.row-champion-l2-title-compact {
+    grid-row-start: 68;
+    grid-row-end: 70;
+}
+
+.row-champion-l2-title-1 {
+    grid-row-start: 69;
+    grid-row-end: 70;
+}
+
+.row-champion-l2-title-2 {
+    grid-row-start: 69;
+    grid-row-end: 71;
+}
+
+.row-champion-l2-spec {
+    grid-row-start: 70;
+    grid-row-end: 71;
+}
+
+.row-champion-l3 {
+    grid-row-start: 71;
+    grid-row-end: 74;
+}
+
+.row-champion-l3-img {
+    grid-row-start: 71;
+    grid-row-end: 72;
+}
+
+.row-champion-l3-title-compact {
+    grid-row-start: 71;
+    grid-row-end: 73;
+}
+
+.row-champion-l3-title-1 {
+    grid-row-start: 72;
+    grid-row-end: 73;
+}
+
+.row-champion-l3-title-2 {
+    grid-row-start: 72;
+    grid-row-end: 74;
+}
+
+.row-champion-l3-spec {
+    grid-row-start: 73;
+    grid-row-end: 74;
+}
+
+
+
+
+.row-test-img-title {
+    grid-row-start: 12;
+    grid-row-end: 13;
+}
+
+.row-test-spec {
+    grid-row-start: 13;
+    grid-row-end: 15;
+}
+
+
+.spec {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left {
+    text-align:center;
+}
+
+.right {
+    text-align: center;
+}
+
+.empty {
+    width: 100%;
+
+    background-color: var(--grid-background-color);
+    border: 0.5px solid var(--grid-border-color);
+
+    padding: 0;
+    margin: 0;
+}
+
+.empty-block {
+    visibility: visible;
+    font-size: 0.3rem;
+}
+
+.empty-block span {
+    visibility: hidden;
+}
+
+.text, .text-compact {
+    width: 100%;
+
+    background-color: var(--grid-background-color);
+    border: 0.5px solid var(--grid-border-color);
+
+    text-align: center;
+    padding: 0.3rem 0.05rem 0 0.05rem;
+    padding-bottom: 0.4rem;
+}
+
+.text-compact {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding-bottom: 0rem;
+    font-size: 0.65rem;
+}
+
+#item-text {
+    width: 100%;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 11;
+    grid-row-end: 12;
+
+    background-color: #d9d1c5;
+    border: 1px solid #b0afa9;
+
+    text-align: center;
+}
+
+#item2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 12;
+    grid-row-end: 13;
+}
+
+
+#grid-view-container {
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: 10px;
+
+    width: 100%;
+}
+
+.set-title-background {
+    background-repeat: no-repeat;
+    background-size: auto min(90%, 8rem);
+    background-position: 0.2rem 0.5rem;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;  
+    text-align: center;
+}
+
+
+
+#serpent-gladiator-set-title {
+    background-image: url(img/icon-serpent-gladiator-4.png);
+}
+
+#artic-flipper-set-title {
+    background-image: url(img/icon-artic-flipper-1.png);
+}
+
+#necrosis-set-title {
+    background-image: url(img/icon-serpent-gladiator-4.png);
+}
+
+#gawrilla-set-title {
+    background-image: url(img/icon-serpent-gladiator-4.png);
+}
+
+#cottageroar-set-title {
+    background-image: url(img/icon-cottageroar-1.png);
+}
+
+#hootclaw-set-title {
+    background-image: url(img/icon-serpent-gladiator-4.png);
+}
+
+#tidal-titan-set-title {
+    background-image: url(img/icon-serpent-gladiator-4.png);
+}
+
+#bon-appeti-set-title {
+    background-image: url(img/icon-bon-appeti-1.png);
+}
+
+#queen-bee-set-title {
+    background-image: url(img/icon-serpent-gladiator-4.png);
+}
+
+#mecha-trojan-set-title {
+    background-image: url(img/icon-serpent-gladiator-4.png);
+}
+
+#blackwing-set-title {
+    background-image: url(img/icon-serpent-gladiator-4.png);
+}
+
+#saberfang-set-title {
+    background-image: url(img/icon-serpent-gladiator-4.png);
+}
+
+#grim-reapor-set-title {
+    background-image: url(img/icon-serpent-gladiator-4.png);
+}
+
+#hell-drider-set-title {
+    background-image: url(img/icon-serpent-gladiator-4.png);
+}
+
+#mega-maggot-set-title {
+    background-image: url(img/icon-serpent-gladiator-4.png);
+}
+
+#gargantua-set-title {
+    background-image: url(img/icon-serpent-gladiator-4.png);
+}
+
+#terrorthorn-set-title {
+    background-image: url(img/icon-terrorthorn-1.png);
+}
+
+#jade-wyrm-set-title {
+    background-image: url(img/icon-serpent-gladiator-4.png);
+}
+
+#snow-beast-set-title {
+    background-image: url(img/icon-serpent-gladiator-4.png);
+}
+
+#frostwing-set-title {
+    background-image: url(img/icon-serpent-gladiator-4.png);
+}
+
+
+#grid-view {
+    display: grid;
+    grid-template-columns: 6.33% 9% 6.33% 9% 6.33% 9% 6.33% 9% 6.33% 9% 6.33% 9% 8%;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+    grid-auto-columns: 14.2%;
+    column-gap: 0;
+    row-gap: 0;
+    width: min(100%, 880px);
+    font-size: 0.85rem;
+    overflow-wrap: break-word;
+    line-height: 1.2;
+    letter-spacing: 0.01rem;
+}
+
+.gear-set-title {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;  
+    text-align: center;
+    transform: rotate(180deg);
+}
+
+.gear-set-title2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#calc-output-container {
+    width: 25rem;
+    display: grid;
+    grid-template-columns: 15% 21% 21% 21% 21%;
+    grid-template-rows: auto;
+}
+
+.calc-output {
+    background-color: var(--grid-background-color);
+    border: 0.5px solid var(--grid-border-color);
+
+    text-align: center;
+}
+
+.output-col-title {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.output-col-inf {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.output-col-rang {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.output-col-cav {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.output-col-army {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+.output-row-title {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.output-row-atk {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.output-row-hp {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.output-row-def {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#selected-grid-view-container {
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+
+    margin-bottom: 3rem;
+}
+
+#selected-grid-view {
+    display: grid;
+    grid-template-columns:  0 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+    grid-auto-columns: 12.5%;
+    column-gap: 0;
+    row-gap: 0;
+    width: min(100%, 880px);
+    font-size: 0.85rem;
+    overflow-wrap: break-word;
+    line-height: 1.2;
+    letter-spacing: 0.01rem;
+    padding-top: 1.5rem;
+}
+
+.selected-gried-view-type {
+    display: inline;
+    position: relative;
+}
+.selected-view-type-close {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    width: calc(0.5rem + 20px);
+    height: calc(0.5rem + 20px);
+    padding: 5px;
+    cursor: pointer;
+}
+
+#selected-helmet-container {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#selected-armor-container {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#selected-legs-container {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#selected-main-hand-container {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#selected-off-hand-container {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#selected-accessory-1-container {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#selected-accessory-2-container {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#selected-accessory-3-container {
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#sub-selected-grid-view {
+    display: grid;
+    grid-template-columns:  0.25% 6% 6% 0.5% 6% 6% 0.5% 6% 6% 0.5% 6% 6% 0.5% 6% 6% 0.5 6% 6% 0.5% 6% 6% 0.5% 6% 6% 0.25%;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+    grid-auto-columns: 12.5%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    column-gap: 0;
+    row-gap: 0;
+    width: max(min(100%, 880px), 500px);
+    font-size: 0.85rem;
+    overflow-wrap: break-word;
+    line-height: 1.2;
+    letter-spacing: 0.01rem;
+}
