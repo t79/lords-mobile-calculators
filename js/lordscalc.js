@@ -133,7 +133,7 @@ export class BackgroundImages {
         }
 
         BackgroundImages.topElement.style.backgroundImage =  "url(" + BackgroundImages.directory + BackgroundImages.activeImage[DarkLightMode.darkMode ? 1 : 0] + ")";
-        BackgroundImages.bottomElement.src = BackgroundImages.directory + BackgroundImages.activeImage[DarkLightMode.darkMode ? 1 : 0];
+        //BackgroundImages.bottomElement.src = BackgroundImages.directory + BackgroundImages.activeImage[DarkLightMode.darkMode ? 1 : 0];
 
     }
 
