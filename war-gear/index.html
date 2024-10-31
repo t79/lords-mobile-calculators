@@ -62,11 +62,11 @@
 
         <div id="content-column">
 
-            <div id="calc-output-container">
+            <div id="calc-output-container2">
 
                 <div id="output-blank" class="calc-output output-col-title output-row-title"></div>
                 <div id="output-title-inf" class="calc-output output-col-inf output-row-title">Inf</div>
-                <div id="output-title-rang" class="calc-output output-col-rang output-row-title">Range</div>
+                <div id="output-title-Range" class="calc-output output-col-Range output-row-title">Rangee</div>
                 <div id="output-title-cav" class="calc-output output-col-cav output-row-title">Cav</div>
                 <div id="output-title-army" class="calc-output output-col-army output-row-title">Army</div>
                 <div id="output-title-atk" class="calc-output output-col-title output-row-atk">ATK</div>
@@ -74,56 +74,83 @@
                 <div id="output-title-def" class="calc-output output-col-title output-row-def">DEF</div>
 
                 <div id="output-inf-atk" class="calc-output output-col-inf output-row-atk"></div>
-                <div id="output-rang-atk" class="calc-output output-col-rang output-row-atk"></div>
+                <div id="output-Range-atk" class="calc-output output-col-Range output-row-atk"></div>
                 <div id="output-cav-atk" class="calc-output output-col-cav output-row-atk"></div>
                 <div id="output-army-atk" class="calc-output output-col-army output-row-atk"></div>
 
                 <div id="output-inf-hp" class="calc-output output-col-inf output-row-hp"></div>
-                <div id="output-rang-hp" class="calc-output output-col-rang output-row-hp"></div>
+                <div id="output-Range-hp" class="calc-output output-col-Range output-row-hp"></div>
                 <div id="output-cav-hp" class="calc-output output-col-cav output-row-hp"></div>
                 <div id="output-army-hp" class="calc-output output-col-army output-row-hp"></div>
 
                 <div id="output-inf-def" class="calc-output output-col-inf output-row-def"></div>
-                <div id="output-rang-def" class="calc-output output-col-rang output-row-def"></div>
+                <div id="output-Range-def" class="calc-output output-col-Range output-row-def"></div>
                 <div id="output-cav-def" class="calc-output output-col-cav output-row-def"></div>
                 <div id="output-army-def" class="calc-output output-col-army output-row-def"></div>
             
             </div>
 
+            <div id="calc-output-outer-container">
+                <div id="calc-output-containers">
+                    <div id="calc-output-inf" class="calc-output-container" style="display:none;">
+                        <div class="calc-output-header"><span class="output-header">Inf</span></div>
+                        <div class="calc-output-atk" style="display:none;"><span class="output-value">31.5</span><span class="output-type">ATK</span></div>
+                        <div class="calc-output-hp" style="display:none;"><span class="output-value">31.5</span><span class="output-type">HP</span></div>
+                        <div class="calc-output-def" style="display:none;"><span class="output-value">45</span><span class="output-type">DEF</span></div>
+                    </div>
+                    <div id="calc-output-range" class="calc-output-container" style="display:none;">
+                        <div class="calc-output-header"><span class="output-header">Range</span></div>
+                        <div class="calc-output-atk" style="display:none;"><span class="output-value">31.5</span><span class="output-type">ATK</span></div>
+                        <div class="calc-output-hp" style="display:none;"><span class="output-value">31.5</span><span class="output-type">HP</span></div>
+                        <div class="calc-output-def" style="display:none;"><span class="output-value">45</span><span class="output-type">DEF</span></div>
+                    </div>
+                    <div id="calc-output-cav" class="calc-output-container" style="display:none;">
+                        <div class="calc-output-header"><span class="output-header">Cav</span></div>
+                        <div class="calc-output-atk" style="display:none;"><span class="output-value">31.5</span><span class="output-type">ATK</span></div>
+                        <div class="calc-output-hp" style="display:none;"><span class="output-value">31.5</span><span class="output-type">HP</span></div>
+                        <div class="calc-output-def" style="display:none;"><span class="output-value">45</span><span class="output-type">DEF</span></div>
+                    </div>
+                    <div id="calc-output-army" class="calc-output-container" style="display:none;">
+                        <div class="calc-output-header"><span class="output-header">Army</span></div>
+                        <div class="calc-output-atk" style="display:none;"><span class="output-value">31.5</span><span class="output-type">ATK</span></div>
+                        <div class="calc-output-hp" style="display:none;"><span class="output-value">31.5</span><span class="output-type">HP</span></div>
+                        <div class="calc-output-def" style="display:none;"><span class="output-value">45</span><span class="output-type">DEF</span></div>
+                    </div>
+                </div>
+            </div>
+
             <div id="selected-grid-view-container">
                 <div id="selected-grid-view">
-                    <div id="selected-helmet-container" class="selected-gried-view-type">
+                    <div id="selected-helmet-container" class="selected-column-helmet selected-row-now selected-gried-view-type">
                         <img id="selected-helmet" src="icons/cat-helmet.webp">
-                        <img id="selected-helmet-close" class="selected-view-type-close" src="icon/close.png" width="20" height="20">
                     </div>
-                    <div id="selected-armor-container" class="selected-gried-view-type">
+                    <div id="selected-armor-container" class="selected-column-armor selected-row-now selected-gried-view-type">
                         <img id="selected-armor" src="icons/cat-armor.webp">
-                        <img id="selected-armor-close" class="selected-view-type-close" src="icon/close.png" width="20" height="20">
                     </div>
-                    <div id="selected-legs-container" class="selected-gried-view-type">
+                    <div id="selected-legs-container" class="selected-column-legs selected-row-now selected-gried-view-type">
                         <img id="selected-legs" src="icons/cat-legs.webp">
-                        <img id="selected-legs-close" class="selected-view-type-close" src="icon/close.png" width="20" height="20">
                     </div>
-                    <div id="selected-main-hand-container" class="selected-gried-view-type">
+                    <div id="selected-main-hand-container" class="selected-column-main-hand selected-row-now selected-gried-view-type">
                         <img id="selected-main-hand" src="icons/cat-main-hand.webp">
-                        <img id="selected-main-hand-close" class="selected-view-type-close" src="icon/close.png" width="20" height="20">
                     </div>
-                    <div id="selected-off-hand-container" class="selected-gried-view-type">
+                    <div id="selected-off-hand-container" class="selected-column-off-hand selected-row-now selected-gried-view-type">
                         <img id="selected-off-hand" src="icons/cat-off-hand.webp">
-                        <img id="selected-off-hand-close" class="selected-view-type-close" src="icon/close.png" width="20" height="20">
                     </div>
-                    <div id="selected-accessory-1-container" class="selected-gried-view-type">
+                    <div id="selected-accessory-1-container" class="selected-column-accessory-1 selected-row-now selected-gried-view-type">
                         <img id="selected-accessory-1" src="icons/cat-accessory.webp">
-                        <img id="selected-accessory-1-close" class="selected-view-type-close" src="icon/close.png" width="20" height="20">
                     </div>
-                    <div id="selected-accessory-2-container" class="selected-gried-view-type">
+                    <div id="selected-accessory-2-container" class="selected-column-accessory-2 selected-row-now selected-gried-view-type">
                         <img id="selected-accessory-2" src="icons/cat-accessory.webp">
-                        <img id="selected-accessory-2-close" class="selected-view-type-close" src="icon/close.png" width="20" height="20">
                     </div>
-                    <div id="selected-accessory-3-container" class="selected-gried-view-type">
+                    <div id="selected-accessory-3-container" class="selected-column-accessory-3 selected-row-now selected-gried-view-type">
                         <img id="selected-accessory-3" src="icons/cat-accessory.webp">
-                        <img id="selected-accessory-3-close" class="selected-view-type-close" src="icon/close.png" width="20" height="20">
                     </div>
+
+                    <img src="" id="selected-previous-off-hand-1" class="selected-column-off-hand-previous-1 selected-row-previous-1 selected-previous">
+                    <img src="" id="selected-previous-off-hand-2" class="selected-column-off-hand-previous-2 selected-row-previous-1 selected-previous">
+                    <img src="" id="selected-previous-off-hand-3" class="selected-column-off-hand-previous-1 selected-row-previous-2 selected-previous">
+                    <img src="" id="selected-previous-off-hand-4" class="selected-column-off-hand-previous-2 selected-row-previous-2 selected-previous">
+
                 </div>
 
                 <div id="sub-selected-grid-view"></div>
@@ -162,12 +189,12 @@
                             data-type="accessory"
                             data-level="50"
                             data-title="Coiled Armband"
-                            data-spec='{"common": {"Inf ATK": 2.1, "Rang ATK": 2.1, "Inf DEF": 1.6, "Rang HP": 1.3},
-                                        "uncommon": {"Inf ATK": 4.05, "Rang ATK": 4.05, "Inf DEF": 3.1, "Rang HP": 2.5},
-                                        "rare": {"Inf ATK": 6.1, "Rang ATK": 6.1, "Inf DEF": 4.7, "Rang HP": 3.75},
-                                        "epic": {"Inf ATK": 8.2, "Rang ATK": 8.2, "Inf DEF": 6.3, "Rang HP": 5.05},
-                                        "legendary": {"Inf ATK": 13, "Rang ATK": 13, "Inf DEF": 10, "Rang HP": 8},
-                                        "mythic": {"Inf ATK": 18.2, "Rang ATK": 18.2, "Inf DEF": 14, "Rang HP": 11.2}}'>
+                            data-boost='{"common": {"Inf ATK": 2.1, "Range ATK": 2.1, "Inf DEF": 1.6, "Range HP": 1.3},
+                                        "uncommon": {"Inf ATK": 4.05, "Range ATK": 4.05, "Inf DEF": 3.1, "Range HP": 2.5},
+                                        "rare": {"Inf ATK": 6.1, "Range ATK": 6.1, "Inf DEF": 4.7, "Range HP": 3.75},
+                                        "epic": {"Inf ATK": 8.2, "Range ATK": 8.2, "Inf DEF": 6.3, "Range HP": 5.05},
+                                        "legendary": {"Inf ATK": 13, "Range ATK": 13, "Inf DEF": 10, "Range HP": 8},
+                                        "mythic": {"Inf ATK": 18.2, "Range ATK": 18.2, "Inf DEF": 14, "Range HP": 11.2}}'>
                             <div class="info-panel">Fill</div>
                             <div class="info-panel-frame-top"></div>
                         </div>
@@ -203,13 +230,13 @@
                             data-type="off-hand"
                             data-level="60"
                             data-title="Venom Blade"
-                            data-spec='{
-                                "common": {"Inf ATK": 4, "Rang ATK": 4, "Rang DEF": 1.6, "Army HP": 1.6},
-                                "uncommon": {"Inf ATK": 7.75, "Rang ATK": 7.75, "Rang DEF": 3.1, "Army HP": 3.1},
-                                "rare": {"Inf ATK": 11.75, "Rang ATK": 11.75, "Rang DEF": 4.7, "Army HP": 4.7},
-                                "epic": {"Inf ATK": 15.75, "Rang ATK": 15.75, "Rang DEF": 6.3, "Army HP": 6.3},
-                                "legendary": {"Inf ATK": 25, "Rang ATK": 25, "Rang DEF": 10, "Army HP": 10},
-                                "mythic": {"Inf ATK": 35, "Rang ATK": 35, "Rang DEF": 14, "Army HP": 14}
+                            data-boost='{
+                                "common": {"Inf ATK": 4, "Range ATK": 4, "Range DEF": 1.6, "Army HP": 1.6},
+                                "uncommon": {"Inf ATK": 7.75, "Range ATK": 7.75, "Range DEF": 3.1, "Army HP": 3.1},
+                                "rare": {"Inf ATK": 11.75, "Range ATK": 11.75, "Range DEF": 4.7, "Army HP": 4.7},
+                                "epic": {"Inf ATK": 15.75, "Range ATK": 15.75, "Range DEF": 6.3, "Army HP": 6.3},
+                                "legendary": {"Inf ATK": 25, "Range ATK": 25, "Range DEF": 10, "Army HP": 10},
+                                "mythic": {"Inf ATK": 35, "Range ATK": 35, "Range DEF": 14, "Army HP": 14}
                             }'>
                             <div class="info-panel">Fill</div>
                             <div class="info-panel-frame-top"></div>
@@ -237,13 +264,13 @@
                             data-type="accessory"
                             data-level="60"
                             data-title="Polar Ring"
-                            data-spec='{
-                                "common": {"Cav ATK": 4, "Rang ATK": 4, "Cav HP": 2.4, "Rang HP": 2.4},
-                                "uncommon": {"Cav ATK": 9.3, "Rang ATK": 9.3, "Cav HP": 3.1, "Rang HP": 3.7},
-                                "rare": {"Cav ATK": 11.75, "Rang ATK": 11.75, "Cav HP": 7.05, "Rang HP": 7.05},
-                                "epic": {"Cav ATK": 15.75, "Rang ATK": 15.75, "Cav HP": 9.45, "Rang HP": 9.45},
-                                "legendary": {"Cav ATK": 25, "Rang ATK": 25, "Cav HP": 15, "Rang HP": 15},
-                                "mythic": {"Cav ATK": 35, "Rang ATK": 35, "Cav HP": 21, "Rang HP": 21}
+                            data-boost='{
+                                "common": {"Cav ATK": 4, "Range ATK": 4, "Cav HP": 2.4, "Range HP": 2.4},
+                                "uncommon": {"Cav ATK": 9.3, "Range ATK": 9.3, "Cav HP": 3.1, "Range HP": 3.7},
+                                "rare": {"Cav ATK": 11.75, "Range ATK": 11.75, "Cav HP": 7.05, "Range HP": 7.05},
+                                "epic": {"Cav ATK": 15.75, "Range ATK": 15.75, "Cav HP": 9.45, "Range HP": 9.45},
+                                "legendary": {"Cav ATK": 25, "Range ATK": 25, "Cav HP": 15, "Range HP": 15},
+                                "mythic": {"Cav ATK": 35, "Range ATK": 35, "Cav HP": 21, "Range HP": 21}
                             }'>
                             <div class="info-panel">Fill</div>
                             <div class="info-panel-frame-top"></div>
@@ -271,13 +298,13 @@
                             data-type="off-hand"
                             data-levle="45"
                             data-title="Arctic Net"
-                            data-spec='{
-                                "common": {"Cav ATK": 1.6, "Rang ATK": 1.6, "Cav DEF": 0.8, "Rang HP": 0.8},
-                                "uncommon": {"Cav ATK": 3.1, "Rang ATK": 3.1, "Cav DEF": 1.55, "Rang HP": 1.55},
-                                "rare": {"Cav ATK": 4.7, "Rang ATK": 4.7, "Cav DEF": 2.35, "Rang HP": 2.35},
-                                "epic": {"Cav ATK": 6.3, "Rang ATK": 6.3, "Cav DEF": 3.15, "Rang HP": 3.15},
-                                "legendary": {"Cav ATK": 10, "Rang ATK": 10, "Cav DEF": 5, "Rang HP": 5},
-                                "mythic": {"Cav ATK": 14, "Rang ATK": 14, "Cav DEF": 7, "Rang HP": 7}
+                            data-boost='{
+                                "common": {"Cav ATK": 1.6, "Range ATK": 1.6, "Cav DEF": 0.8, "Range HP": 0.8},
+                                "uncommon": {"Cav ATK": 3.1, "Range ATK": 3.1, "Cav DEF": 1.55, "Range HP": 1.55},
+                                "rare": {"Cav ATK": 4.7, "Range ATK": 4.7, "Cav DEF": 2.35, "Range HP": 2.35},
+                                "epic": {"Cav ATK": 6.3, "Range ATK": 6.3, "Cav DEF": 3.15, "Range HP": 3.15},
+                                "legendary": {"Cav ATK": 10, "Range ATK": 10, "Cav DEF": 5, "Range HP": 5},
+                                "mythic": {"Cav ATK": 14, "Range ATK": 14, "Cav DEF": 7, "Range HP": 7}
                             }'>
                             <div class="info-panel">Fill</div>
                             <div class="info-panel-frame-top"></div>

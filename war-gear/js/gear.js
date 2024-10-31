@@ -7,7 +7,11 @@ export class Gear extends BaseClass {
     _gearType;
     _elm;
     _iconElm;
+    _infoPanelElm;
     _isSelected = false;
+    _boostValues;
+
+    _currentType = 0;
 
     get Id() {
         return this._id;
@@ -25,7 +29,22 @@ export class Gear extends BaseClass {
         return this._iconElm.getAttribute(this._attributes[this._types[this._currentType]] + "-selected");
     }
 
-    _currentType = 0;
+    get CurrentBoostValues() {
+        console.log(this._boostValues);
+        console.log(this._types[this._currentType].toLowerCase());
+        console.log(this._boostValues[this._types[this._currentType].toLowerCase()]);
+        return this._boostValues[this._types[this._currentType].toLowerCase()];
+    }
+
+    set IsSelected(value) {
+        this._isSelected = value;
+        if (value) {
+            this._iconElm.src = this.CurrentSelectedIcon;
+        }
+        else {
+            this._iconElm.src = this.CurrentIcon;
+        }
+    }
 
     constructor(id, gearType) {
         super();
@@ -38,6 +57,8 @@ export class Gear extends BaseClass {
         this._elm = document.getElementById(this._id);
         this._iconElm = this._elm.getElementsByClassName("gear-icon-frame")[0];
         this._iconElm.addEventListener('click', () => this.IconClicked().bind(this));
+        this._infoPanelElm = this._elm.getElementsByClassName("info-panel-container")[0];
+        this._boostValues = JSON.parse(this._infoPanelElm.getAttribute("data-boost"));
     }
 
     IconClicked() {

@@ -30,5 +30,16 @@ export class GearSet extends BaseClass {
     SetGear(inst) {
         this._selected[inst.GearType].SetGear(inst);
         console.log("Gear set: " + inst.Id);
+        this.DispatchEvent("gear-changed");
+    }
+
+    GetGearSet() {
+        const set = [];
+        Object.values(this._selected).forEach((item) => {
+            if (item.Gear != null) {
+                set.push(item.Gear);
+            }
+        });
+        return set;
     }
 }

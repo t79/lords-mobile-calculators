@@ -1,12 +1,14 @@
 import { DarkLightMode, BackgroundImages } from "../../js/lordscalc.js";
 import { GearSet } from "./gear-set.js";
 import { Monster } from "./monster.js";
+import { ScoreCalculator } from "./score-calculator.js";
 
 export class WarGear {
 
     _monster;
     _monster2;
     _selectedSet;
+    _scoreCalculator;
 
     constructor() {
         this.Setup();
@@ -22,7 +24,9 @@ export class WarGear {
         this._monster2 = new Monster("artic-flipper");
         this._monster2.AddEventListener("gear-changed", (inst) => this.GearChanged(inst).bind(this));
 
-        this._selectedSet = new GearSet;
+        this._selectedSet = new GearSet();
+        this._scoreCalculator = new ScoreCalculator(this._selectedSet);
+
     }
 
     GearChanged(instance) {

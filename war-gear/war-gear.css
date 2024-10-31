@@ -30,10 +30,56 @@ img {
     width: 100%
 }
 
+#calc-output-container2 {
+    display: none;
+}
+
+#calc-output-outer-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    width: 100%;
+    height: 8rem;
+}
+
+#calc-output-containers {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+}
+
+.calc-output-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    justify-items: center;
+}
+
+.calc-output-header { grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 2; }
+.calc-output-atk { display: none; grid-column-start: 1; grid-column-end: 2; grid-row-start: 2; grid-row-end: 3; }
+.calc-output-hp { display: none; grid-column-start: 1; grid-column-end: 2; grid-row-start: 3; grid-row-end: 4; }
+.calc-output-def { display: none; grid-column-start: 1; grid-column-end: 2; grid-row-start: 4; grid-row-end: 5; }
+
+.output-header {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.output-value {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.output-type {
+    font-size: 0.8rem;
+}
+
 #selected-grid-view {
     display: grid;
-    grid-template-columns:  repeat(8, 1fr);
-    grid-template-rows: repeat(1, auto);
+    grid-template-columns:  repeat(16, 1fr);
+    grid-template-rows: repeat(3, auto);
     grid-auto-flow: column;
     grid-auto-columns: 12.5%;
     column-gap: 0;
@@ -44,6 +90,30 @@ img {
     line-height: 1.2;
     letter-spacing: 0.01rem;
     padding-top: 1.5rem;
+}
+
+.selected-column-helmet { grid-column-start: 1; grid-column-end: 3; }
+.selected-column-helmet-previous-1 { grid-column-start: 1; grid-column-end: 2; }
+.selected-column-helmet-previous-2 { grid-column-start: 2; grid-column-end: 3; }
+
+
+.selected-column-armor { grid-column-start: 3; grid-column-end: 5; }
+.selected-column-legs { grid-column-start: 5; grid-column-end: 7; }
+.selected-column-main-hand { grid-column-start: 7; grid-column-end: 9; }
+.selected-column-off-hand { grid-column-start: 9; grid-column-end: 11; }
+.selected-column-off-hand-previous-1 { grid-column-start: 9; grid-column-end: 10; }
+.selected-column-off-hand-previous-2 { grid-column-start: 10; grid-column-end: 11; }
+
+.selected-column-accessory-1 { grid-column-start: 11; grid-column-end: 13; }
+.selected-column-accessory-2 { grid-column-start: 13; grid-column-end: 15; }
+.selected-column-accessory-3 { grid-column-start: 15; grid-column-end: 17; }
+
+.selected-row-now { grid-row-start: 1; grid-row-end: 2; }
+.selected-row-previous-1 { grid-row-start: 2; grid-row-end: 3; }
+.selected-row-previous-2 { grid-row-start: 3; grid-row-end: 4; }
+
+.selected-previous {
+    opacity: 0;
 }
 
 #grid-view {
@@ -949,12 +1019,7 @@ img {
     align-items: flex-end;
 }
 
-#calc-output-container {
-    width: 25rem;
-    display: grid;
-    grid-template-columns: 15% 21% 21% 21% 21%;
-    grid-template-rows: auto;
-}
+
 
 .calc-output {
     background-color: var(--grid-background-color);
@@ -1025,6 +1090,7 @@ img {
 .selected-gried-view-type {
     display: inline;
     position: relative;
+    line-height: 0;
 }
 .selected-view-type-close {
     position: absolute;
@@ -1036,61 +1102,7 @@ img {
     cursor: pointer;
 }
 
-#selected-helmet-container {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
 
-#selected-armor-container {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-#selected-legs-container {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-#selected-main-hand-container {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-#selected-off-hand-container {
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-#selected-accessory-1-container {
-    grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-#selected-accessory-2-container {
-    grid-column-start: 7;
-    grid-column-end: 8;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-#selected-accessory-3-container {
-    grid-column-start: 8;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
 
 #sub-selected-grid-view {
     display: grid;
