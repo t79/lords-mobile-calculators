@@ -65,6 +65,8 @@ export class Gear extends BaseClass {
         "LEGS": "-legs",
         "MAIN_HAND": "-main-hand",
         "OFF_HAND": "-off-hand",
-        "ACCESSORY": "-accessory"
+        "ACCESSORY_1": "-accessory",
+        "ACCESSORY_2": "-accessory",
+        "ACCESSORY_3": "-accessory"
     }
 }

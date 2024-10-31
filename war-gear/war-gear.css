@@ -38,7 +38,7 @@ img {
     grid-auto-columns: 12.5%;
     column-gap: 0;
     row-gap: 0;
-    width: min(100%, 620px);
+    width: min(95%, 620px);
     font-size: 0.85rem;
     overflow-wrap: break-word;
     line-height: 1.2;
@@ -48,17 +48,20 @@ img {
 
 #grid-view {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr) 0.3333fr;
     grid-template-rows: repeat(13, auto);
     grid-auto-flow: column;
-    grid-auto-columns: 14.2%;
     column-gap: 0;
     row-gap: 0;
-    width: min(100%, 620px);
+    width: min(95%, 620px);
     font-size: 0.85rem;
     overflow-wrap: break-word;
     line-height: 1.2;
     letter-spacing: 0.01rem;
+}
+
+#grid-view div {
+    line-height: 0;
 }
 
 .gear-container {
@@ -66,8 +69,9 @@ img {
 }
 
 .info-panel{
+    display: none;
     position: absolute;
-    top: 80%;
+    top: 100%;
     left: -100px;
     width: 350px;
     border: 1px solid var(--grid-border-color);
@@ -109,6 +113,11 @@ img {
     grid-column-end: 7;
 }
 
+.column-accessory-select {
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
+
 .row-header {
     grid-row-start: 1;
     grid-row-end: 2;
@@ -116,7 +125,30 @@ img {
 
 .row-serpent-gladiator {
     grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.row-serpent-gladiator-accessory-1 {
+    grid-row-start: 2;
     grid-row-end: 3;
+}
+
+.row-serpent-gladiator-accessory-2 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.row-serpent-gladiator-accessory-3 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#serpent-gladiator-accessory-1 {
+    background-color: black;
+}
+
+#serpent-gladiator-accessory-1 img {
+    background-color: #97805a22;
 }
 
 .row-artic-flipper {

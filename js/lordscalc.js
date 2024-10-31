@@ -108,7 +108,7 @@ export class BackgroundImages {
     static topElement = null;
     static bottomElement = null;
 
-    static directory = "/backgrounds/";
+    static directory = "backgrounds/";
     static images = [
         ["bg_01_90.webp", "bg_01_60.webp"],
         ["bg_02_90.webp", "bg_02_60.webp"],

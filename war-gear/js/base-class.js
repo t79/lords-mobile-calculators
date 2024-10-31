@@ -40,12 +40,16 @@ export class BaseClass {
         2: "LEGS",
         3: "MAIN_HAND",
         4: "OFF_HAND",
-        5: "ACCESSORY",
+        5: "ACCESSORY_1",
+        6: "ACCESSORY_2",
+        7: "ACCESSORY_3",
         "HELMET": "HELMET",
         "ARMOR": "ARMOR",
         "LEGS": "LEGS",
         "MAIN_HAND": "MAIN_HAND",
         "OFF_HAND": "OFF_HAND",
-        "ACCESSORY": "ACCESSORY"
+        "ACCESSORY_1": "ACCESSORY_1",
+        "ACCESSORY_2": "ACCESSORY_2",
+        "ACCESSORY_3": "ACCESSORY_3"
     }
 }

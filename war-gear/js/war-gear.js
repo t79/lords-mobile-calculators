@@ -5,6 +5,7 @@ import { Monster } from "./monster.js";
 export class WarGear {
 
     _monster;
+    _monster2;
     _selectedSet;
 
     constructor() {
@@ -18,6 +19,8 @@ export class WarGear {
 
         this._monster = new Monster("serpent-gladiator");
         this._monster.AddEventListener("gear-changed", (inst) => this.GearChanged(inst).bind(this));
+        this._monster2 = new Monster("artic-flipper");
+        this._monster2.AddEventListener("gear-changed", (inst) => this.GearChanged(inst).bind(this));
 
         this._selectedSet = new GearSet;
     }
