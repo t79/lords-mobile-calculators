@@ -135,7 +135,6 @@
                     </div>
                     <div id="selected-off-hand-container" class="selected-column-off-hand selected-row-now selected-gried-view-type">
                         <img id="selected-off-hand" src="icons/cat-off-hand.webp">
-                        <img src="layout/context-arrow.svg" class="info-panel-arrow">
                     </div>
                     <div id="selected-accessory-1-container" class="selected-column-accessory-1 selected-row-now selected-gried-view-type">
                         <img id="selected-accessory-1" src="icons/cat-accessory.webp">
@@ -179,7 +178,7 @@
                     <img id="header-accessory" class="column-accessory row-header-img" src="icons/cat-accessory.webp">
 
 
-                    <div id="serpent-gladiator-accessory" class="gear-container column-accessory row-serpent-gladiator">
+                    <div id="serpent-gladiator-accessory" data-empty="false" class="gear-container column-accessory row-serpent-gladiator">
                         <img class="gear-icon-frame"
                             src="icons/01-serpent-gladiator--accessory--coiled-armband--mythic.webp"
                             data-common="icons/01-serpent-gladiator--accessory--coiled-armband--common.webp"
@@ -218,9 +217,9 @@
                         <img src="icons/cat-accessory.webp">
                     </div>
 
-                    <div id="serpent-gladiator-off-hand" class="gear-container column-off-hand row-serpent-gladiator">
+                    <div id="serpent-gladiator-off-hand" data-empty="false" class="gear-container column-off-hand row-serpent-gladiator">
                         <img class="gear-icon-frame"
-                            src="icons/01-serpent-gladiator--off-hand--venom-blade--mythic.webp"
+                            src="icons/01-serpent-gladiator--off-hand--venon-blade--excluded.webp"
                             data-common="icons/01-serpent-gladiator--off-hand--venom-blade--common.webp"
                             data-common-selected="icons/01-serpent-gladiator--off-hand--venom-blade--common-selected.webp"
                             data-uncommon="icons/01-serpent-gladiator--off-hand--venom-blade--uncommon.webp"
@@ -250,7 +249,79 @@
                         </div>
                     </div>
 
-                    <div id="artic-flipper-accessory" class="gear-container column-accessory row-artic-flipper">
+                    <div id="serpent-gladiator-main-hand" data-empty="true" class="gear-container column-main-hand row-serpent-gladiator">
+                        <img class="gear-icon-frame" src="icons/00-no-gear.webp">
+                    </div>
+
+                    <div id="serpent-gladiator-legs" data-empty="false" class="gear-container column-legs row-serpent-gladiator">
+                        <img class="gear-icon-frame"
+                            src="icons/01-serpent-gladiator--legs--desert-trousers--mythic.webp"
+                            data-common="icons/01-serpent-gladiator--legs--desert-trousers--common.webp"
+                            data-common-selected="icons/01-serpent-gladiator--legs--desert-trousers--common-selected.webp"
+                            data-uncommon="icons/01-serpent-gladiator--legs--desert-trousers--uncommon.webp"
+                            data-uncommon-selected="icons/01-serpent-gladiator--legs--desert-trousers--uncommon-selected.webp"
+                            data-rare="icons/01-serpent-gladiator--legs--desert-trousers--rare.webp"
+                            data-rare-selected="icons/01-serpent-gladiator--legs--desert-trousers--rare-selected.webp"
+                            data-epic="icons/01-serpent-gladiator--legs--desert-trousers--epic.webp"
+                            data-epic-selected="icons/01-serpent-gladiator--legs--desert-trousers--epic-selected.webp"
+                            data-legendary="icons/01-serpent-gladiator--legs--desert-trousers--legendary.webp"
+                            data-legendary-selected="icons/01-serpent-gladiator--legs--desert-trousers--legendary-selected.webp"
+                            data-mythic="icons/01-serpent-gladiator--legs--desert-trousers--mythic.webp"
+                            data-mythic-selected="icons/01-serpent-gladiator--legs--desert-trousers--mythic-selected.webp"
+                            data-excluded="icons/01-serpent-gladiator--legs--desert-trousers--mythic.webp"
+                            title="Desert Trousers from Serpent Gladiator">
+                        <div class="info-panel-container" 
+                            data-type="legs"
+                            data-levle="45"
+                            data-title="Desert Trousers";
+                            data-boost='{
+                                "common": {"Inf ATK": 1.6, "Range ATK": 1.6, "Range DEF": 1.1, "Inf HP": 0.5},
+                                "uncommon": {"Inf ATK": 3.1, "Range ATK": 3.1, "Range DEF": 2.15, "Inf HP": 0.95},
+                                "rare": {"Inf ATK": 4.7, "Range ATK": 4.7, "Range DEF": 3.3, "Inf HP": 1.4},
+                                "epic": {"Inf ATK": 6.3, "Range ATK": 6.3, "Range DEF": 4.4, "Inf HP": 1.9},
+                                "legendary": {"Inf ATK": 10, "Range ATK": 10, "Range DEF": 7, "Inf HP": 3},
+                                "mythic": {"Inf ATK": 14, "Range ATK": 14, "Range DEF": 9.8, "Inf HP": 4.2}
+                            }'>
+                        </div>
+                    </div>
+
+                    <div id="serpent-gladiator-armor" data-empty="true" class="gear-container column-armor row-serpent-gladiator">
+                        <img class="gear-icon-frame" src="icons/00-no-gear.webp">
+                    </div>
+
+                    <div id="serpent-gladiator-helmet" data-empty="false" class="gear-container column-helmet row-serpent-gladiator">
+                        <img class="gear-icon-frame"
+                            src="icons/01-serpent-gladiator--helmet--serpent-helm--mythic.webp"
+                            data-common="icons/01-serpent-gladiator--helmet--serpent-helm--common.webp"
+                            data-common-selected="icons/01-serpent-gladiator--helmet--serpent-helm--common-selected.webp"
+                            data-uncommon="icons/01-serpent-gladiator--helmet--serpent-helm--uncommon.webp"
+                            data-uncommon-selected="icons/01-serpent-gladiator--helmet--serpent-helm--uncommon-selected.webp"
+                            data-rare="icons/01-serpent-gladiator--helmet--serpent-helm--rare.webp"
+                            data-rare-selected="icons/01-serpent-gladiator--helmet--serpent-helm--rare-selected.webp"
+                            data-epic="icons/01-serpent-gladiator--helmet--serpent-helm--epic.webp"
+                            data-epic-selected="icons/01-serpent-gladiator--helmet--serpent-helm--epic-selected.webp"
+                            data-legendary="icons/01-serpent-gladiator--helmet--serpent-helm--legendary.webp"
+                            data-legendary-selected="icons/01-serpent-gladiator--helmet--serpent-helm--legendary-selected.webp"
+                            data-mythic="icons/01-serpent-gladiator--helmet--serpent-helm--mythic.webp"
+                            data-mythic-selected="icons/01-serpent-gladiator--helmet--serpent-helm--mythic-selected.webp"
+                            data-excluded="icons/01-serpent-gladiator--helmet--serpent-helm--mythic.webp"
+                            title="Serpent Helm from Serpent Gladiator">
+                        <div class="info-panel-container" 
+                            data-type="helmet"
+                            data-levle="60"
+                            data-title="Serpent Helm"
+                            data-boost='{
+                                "common": {"Inf ATK": 4.8, "Range ATK": 4.8, "Inf HP": 2.4, "Army DEF": 4},
+                                "uncommon": {"Inf ATK": 9.3, "Range ATK": 9.3, "Inf HP": 4.65, "Army DEF": 7.75},
+                                "rare": {"Inf ATK": 14.1, "Range ATK": 14.1, "Inf HP": 7.05, "Army DEF": 11.75},
+                                "epic": {"Inf ATK": 18.9, "Range ATK": 18.9, "Inf HP": 9.45, "Army DEF": 15.75},
+                                "legendary": {"Inf ATK": 30, "Range ATK": 30, "Inf HP": 15, "Army DEF": 25},
+                                "mythic": {"Inf ATK": 42, "Range ATK": 42, "Inf HP": 21, "Army DEF": 35}
+                            }'>
+                        </div>
+                    </div>
+
+                    <div id="artic-flipper-accessory" data-empty="false" class="gear-container column-accessory row-artic-flipper">
                         <img class="gear-icon-frame"
                             src="icons/02-artic-flipper--accessory--polar-ring--common.webp"
                             data-common="icons/01-serpent-gladiator--off-hand--venom-blade--common.webp"
@@ -282,7 +353,7 @@
                         </div>
                     </div>
 
-                    <div id="artic-flipper-off-hand" class="gear-container column-off-hand row-artic-flipper">
+                    <div id="artic-flipper-off-hand" data-empty="false" class="gear-container column-off-hand row-artic-flipper">
                         <img class="gear-icon-frame"
                             src="icons/02-artic-flipper--off-hand--artic-net--common.webp"
                             data-common="icons/01-serpent-gladiator--off-hand--venom-blade--common.webp"
@@ -301,7 +372,7 @@
                             title="Arctic Net from Arctic Flipper">
                         <div class="info-panel-container" 
                             data-type="off-hand"
-                            data-levle="45"
+                            data-level="45"
                             data-title="Arctic Net"
                             data-boost='{
                                 "common": {"Cav ATK": 1.6, "Range ATK": 1.6, "Cav DEF": 0.8, "Range HP": 0.8},
@@ -312,6 +383,22 @@
                                 "mythic": {"Cav ATK": 14, "Range ATK": 14, "Cav DEF": 7, "Range HP": 7}
                             }'>
                         </div>
+                    </div>
+
+                    <div id="artic-flipper-main-hand" data-empty="true" class="gear-container column-main-hand row-artic-flipper">
+                        <img class="gear-icon-frame" src="icons/00-no-gear.webp">
+                    </div>
+
+                    <div id="artic-flipper-legs" data-empty="true" class="gear-container column-legs row-artic-flipper">
+                        <img class="gear-icon-frame" src="icons/00-no-gear.webp">
+                    </div>
+
+                    <div id="artic-flipper-armor" data-empty="true" class="gear-container column-armor row-artic-flipper">
+                        <img class="gear-icon-frame" src="icons/00-no-gear.webp">
+                    </div>
+
+                    <div id="artic-flipper-helmet" data-empty="true" class="gear-container column-helmet row-artic-flipper">
+                        <img class="gear-icon-frame" src="icons/00-no-gear.webp">
                     </div>
 
                 </div>

@@ -20,9 +20,9 @@ export class WarGear {
         BackgroundImages.setImages();
 
         this._monster = new Monster("serpent-gladiator");
-        this._monster.AddEventListener("gear-changed", (inst) => this.GearChanged(inst).bind(this));
+        this._monster.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
         this._monster2 = new Monster("artic-flipper");
-        this._monster2.AddEventListener("gear-changed", (inst) => this.GearChanged(inst).bind(this));
+        this._monster2.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
 
         this._selectedSet = new GearSet();
         this._scoreCalculator = new ScoreCalculator(this._selectedSet);

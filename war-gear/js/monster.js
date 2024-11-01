@@ -19,19 +19,23 @@ export class Monster extends BaseClass {
 
     SetupGears() {
         this._gear = {
-            //helmet: new Gear(this._id + "-helmet"),
-            //armor: new Gear(this._id + "-armor"),
-            //legs: new Gear(this._id + "-legs"),
-            //mainHand: new Gear(this._id + "-main-hand"),
+            helmet: new Gear(this._id, this._gearTypes["HELMET"]),
+            armor: new Gear(this._id, this._gearTypes["ARMOR"]),
+            legs: new Gear(this._id, this._gearTypes["LEGS"]),
+            mainHand: new Gear(this._id, this._gearTypes["MAIN_HAND"]),
             offHand: new Gear(this._id, this._gearTypes["OFF_HAND"]),
             accessory1: new Gear(this._id, this._gearTypes["ACCESSORY_1"]),
             accessory2: new Gear(this._id, this._gearTypes["ACCESSORY_2"]),
             accessory3: new Gear(this._id, this._gearTypes["ACCESSORY_3"])
         }
-        this._gear.offHand.AddEventListener("gear-changed", (inst) => this.GearChanged(inst).bind(this));
-        this._gear.accessory1.AddEventListener("gear-changed", (inst) => this.GearChanged(inst).bind(this));
-        this._gear.accessory2.AddEventListener("gear-changed", (inst) => this.GearChanged(inst).bind(this));
-        this._gear.accessory3.AddEventListener("gear-changed", (inst) => this.GearChanged(inst).bind(this));
+        this._gear.helmet.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
+        this._gear.armor.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
+        this._gear.legs.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
+        this._gear.mainHand.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
+        this._gear.offHand.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
+        this._gear.accessory1.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
+        this._gear.accessory2.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
+        this._gear.accessory3.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
 
 
     }

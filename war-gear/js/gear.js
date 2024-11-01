@@ -8,6 +8,7 @@ export class Gear extends BaseClass {
     _elm;
     _iconElm;
     _infoPanelElm;
+    _hasGear;
     _isSelected = false;
     _boostValues;
 
@@ -54,8 +55,19 @@ export class Gear extends BaseClass {
     }
 
     Setup() {
+        console.log(this._id);
         this._elm = document.getElementById(this._id);
+        if (this._elm.getAttribute("data-empty") === "true") {
+            this._hasGear = false;
+            console.log(this._elm.id + " false");
+            return;
+        }
+        else {
+            this._hasGear = true;
+            console.log(this._elm.id + " true");
+        }
         this._iconElm = this._elm.getElementsByClassName("gear-icon-frame")[0];
+        console.log(this._iconElm);
         this._iconElm.addEventListener('click', () => this.IconClicked().bind(this));
         this._infoPanelElm = this._elm.getElementsByClassName("info-panel-container")[0];
         this._boostValues = JSON.parse(this._infoPanelElm.getAttribute("data-boost"));
