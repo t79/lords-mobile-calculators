@@ -5,7 +5,7 @@ import { ScoreCalculator } from "./score-calculator.js";
 
 export class WarGear {
 
-    _monster;
+    _monsters = {}
     _monster2;
     _selectedSet;
     _scoreCalculator;
@@ -19,11 +19,12 @@ export class WarGear {
         DarkLightMode.setupButton();
         BackgroundImages.setImages();
 
-        this._monster = new Monster("serpent-gladiator");
-        this._monster.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
-        this._monster2 = new Monster("artic-flipper");
-        this._monster2.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
-
+        this._monsters["serpent-gladiator"] = new Monster("serpent-gladiator");
+        this._monsters["serpent-gladiator"].AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
+        this._monsters["arctic-flipper"] = new Monster("arctic-flipper");
+        this._monsters["arctic-flipper"].AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
+        this._monsters["necrosis"] = new Monster("necrosis");
+        this._monsters["necrosis"].AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
         this._selectedSet = new GearSet();
         this._scoreCalculator = new ScoreCalculator(this._selectedSet);
 

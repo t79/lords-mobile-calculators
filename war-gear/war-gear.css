@@ -6,6 +6,10 @@ body {
     --grid-background-color: #97805a33;
     --grid-border-color: #ccc3ba; 
 
+    --serpent-gladiator-top-line: 2;
+    --arctic-flipper-top-line: 5;
+    --necrosis-top-line: 8;
+
 }
 
 .dark-mode {
@@ -42,8 +46,9 @@ img {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
+    align-items: center;
     width: 100%;
-    height: 8rem;
+    height: 10rem;
 }
 
 #calc-output-containers {
@@ -51,8 +56,14 @@ img {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
     gap: 1rem;
+    padding: 1rem;
+    min-height: 4rem;
+    min-width: 15rem;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
 }
 
 .calc-output-container {
@@ -67,17 +78,17 @@ img {
 .calc-output-def { display: none; grid-column-start: 1; grid-column-end: 2; grid-row-start: 4; grid-row-end: 5; }
 
 .output-header {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: bold;
 }
 
 .output-value {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
 }
 
 .output-type {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 
 #selected-grid-view {
@@ -191,93 +202,55 @@ img {
 }
 
 
-.column-helmet {
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.column-armor {
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-.column-legs {
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
-
-.column-main-hand {
-    grid-column-start: 4;
-    grid-column-end: 5;
-}
-
-.column-off-hand {
-    grid-column-start: 5;
-    grid-column-end: 6;
-}
-
-.column-accessory {
-    grid-column-start: 6;
-    grid-column-end: 7;
-}
-
-.column-accessory-select {
-    grid-column-start: 7;
-    grid-column-end: 8;
-}
-
-.row-header {
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.row-serpent-gladiator {
-    grid-row-start: 2;
-    grid-row-end: 5;
-}
-
-.row-serpent-gladiator-accessory-1 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.row-serpent-gladiator-accessory-2 {
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-.row-serpent-gladiator-accessory-3 {
-    grid-row-start: 4;
-    grid-row-end: 5;
-}
-
-#serpent-gladiator-accessory-1 {
+.accessory-button-1 {
     background-color: black;
 }
 
-#serpent-gladiator-accessory-1 img {
+.accessory-button-1 img {
     background-color: #97805a22;
 }
 
-.row-artic-flipper {
-    grid-row-start: 6;
-    grid-row-end: 9;
-}
+.column-helmet { grid-column-start: 1; grid-column-end: 2; }
+.column-armor { grid-column-start: 2; grid-column-end: 3; }
+.column-legs { grid-column-start: 3; grid-column-end: 4; }
+.column-main-hand { grid-column-start: 4; grid-column-end: 5; }
+.column-off-hand { grid-column-start: 5; grid-column-end: 6; }
+.column-accessory { grid-column-start: 6; grid-column-end: 7; }
+.column-accessory-select { grid-column-start: 7; grid-column-end: 8; }
 
-.row-necrosis {
-    grid-row-start: 9;
-    grid-row-end: 12;
-}
+.row-header { grid-row-start: 1; grid-row-end: 2; }
 
-.row-gawrilla {
-    grid-row-start: 12;
-    grid-row-end: 15;
-}
+.row-serpent-gladiator { grid-row-start: var(--serpent-gladiator-top-line); 
+    grid-row-end: calc(var(--serpent-gladiator-top-line) + 3); }
+.row-serpent-gladiator-accessory-1 { grid-row-start: var(--serpent-gladiator-top-line); 
+    grid-row-end: calc(var(--serpent-gladiator-top-line) + 1); }
+.row-serpent-gladiator-accessory-2 { grid-row-start: calc(var(--serpent-gladiator-top-line) + 1); 
+    grid-row-end: calc(var(--serpent-gladiator-top-line) + 2); }
+.row-serpent-gladiator-accessory-3 { grid-row-start: calc(var(--serpent-gladiator-top-line) + 2); 
+    grid-row-end: calc(var(--serpent-gladiator-top-line) + 3); }
 
-.row-cottageroar {
-    grid-row-start: 15;
-    grid-row-end: 18;
-}
+.row-arctic-flipper { grid-row-start: var(--arctic-flipper-top-line); 
+    grid-row-end: calc(var(--arctic-flipper-top-line) + 3); }
+.row-arctic-flipper-accessory-1 { grid-row-start: var(--arctic-flipper-top-line); 
+    grid-row-end: calc(var(--arctic-flipper-top-line) + 1); }
+.row-arctic-flipper-accessory-2 { grid-row-start: calc(var(--arctic-flipper-top-line) + 1); 
+    grid-row-end: calc(var(--arctic-flipper-top-line) + 2); }
+.row-arctic-flipper-accessory-3 { grid-row-start: calc(var(--arctic-flipper-top-line) + 2); 
+    grid-row-end: calc(var(--arctic-flipper-top-line) + 3); }
+
+.row-necrosis { grid-row-start: var(--necrosis-top-line); 
+    grid-row-end: calc(var(--necrosis-top-line) + 3); }
+.row-necrosis-accessory-1 { grid-row-start: var(--necrosis-top-line); 
+    grid-row-end: calc(var(--necrosis-top-line) + 1); }
+.row-necrosis-accessory-2 { grid-row-start: calc(var(--necrosis-top-line) + 1); 
+    grid-row-end: calc(var(--necrosis-top-line) + 2); }
+.row-necrosis-accessory-3 { grid-row-start: calc(var(--necrosis-top-line) + 2); 
+    grid-row-end: calc(var(--necrosis-top-line) + 3); }
+
+.row-gawrilla { grid-row-start: 12; 
+    grid-row-end: 15; }
+.row-cottageroar { grid-row-start: 15;
+    grid-row-end: 18; }
 
 .row-hootclaw {
     grid-row-start: 18;
