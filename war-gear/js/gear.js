@@ -47,6 +47,10 @@ export class Gear extends BaseClass {
         }
     }
 
+    get IsSelectedGearElm() {
+        return false;
+    }
+
     constructor(id, gearType) {
         super();
         this._id = id + this._gearIdTail[this._gearTypes[gearType]];
@@ -55,20 +59,16 @@ export class Gear extends BaseClass {
     }
 
     Setup() {
-        console.log(this._id);
         this._elm = document.getElementById(this._id);
         if (this._elm.getAttribute("data-empty") === "true") {
             this._hasGear = false;
-            console.log(this._elm.id + " false");
             return;
         }
         else {
             this._hasGear = true;
-            console.log(this._elm.id + " true");
         }
         this._iconElm = this._elm.getElementsByClassName("gear-icon-frame")[0];
-        console.log(this._iconElm);
-        this._iconElm.addEventListener('click', () => this.IconClicked().bind(this));
+        this._iconElm.addEventListener('click', () => this.IconClicked());
         this._infoPanelElm = this._elm.getElementsByClassName("info-panel-container")[0];
         this._boostValues = JSON.parse(this._infoPanelElm.getAttribute("data-boost"));
     }
@@ -79,7 +79,6 @@ export class Gear extends BaseClass {
         }
         this._iconElm.src = this.CurrentSelectedIcon;
         this._isSelected = true;
-        console.log("Clicked " + this._id + " " + this._currentType);
         this.DispatchEvent("gear-changed");
     }
 

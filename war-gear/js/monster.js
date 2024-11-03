@@ -9,6 +9,7 @@ export class Monster extends BaseClass {
     _id;
     _gear;
     _selectedSet;
+    _styleRoot;
 
     constructor(id) {
         super();
@@ -37,13 +38,18 @@ export class Monster extends BaseClass {
         this._gear.accessory2.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
         this._gear.accessory3.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
 
-
+        this._styleRoot = document.querySelector(":root");
     }
 
     GearChanged(instance) {
         console.log("Got event" + instance.Id);
 
         this.DispatchEvent("gear-changed", instance);
+    }
+
+    LayoutChangeToRow(index) {
+        console.log("Layout change to row: " + index + " : --" + this._id + "-top-line " + (2 + index * 3));
+        this._styleRoot.style.setProperty(`--${this._id}-top-line`, 2 + index * 3);
     }
 
 

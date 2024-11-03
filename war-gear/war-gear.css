@@ -1,3 +1,10 @@
+:root {
+
+    --serpent-gladiator-top-line: 2;
+    --arctic-flipper-top-line: 5;
+    --necrosis-top-line: 8;
+}
+
 
 body {
 
@@ -6,9 +13,6 @@ body {
     --grid-background-color: #97805a33;
     --grid-border-color: #ccc3ba; 
 
-    --serpent-gladiator-top-line: 2;
-    --arctic-flipper-top-line: 5;
-    --necrosis-top-line: 8;
 
 }
 
@@ -38,6 +42,38 @@ img {
     width: 100%
 }
 
+#filter-and-query-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+#filter-query-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: min(95%, 620px);
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--header-secound-color-a);
+    cursor: pointer;
+}
+
+#filter-query-caret {
+    width: auto;
+    height: 1.3rem;
+    transform: translateY(0.15rem);
+}
+
+#filter-query-body {
+    display: none;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
 #calc-output-container2 {
     display: none;
 }
@@ -57,12 +93,15 @@ img {
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
-    padding: 1rem;
-    min-height: 4rem;
+    padding: 0.6rem;
+    min-height: 5rem;
     min-width: 15rem;
     border-radius: 5px;
-    color: white;
-    background-color: black;
+    color: var(--header-secound-color-a);
+    background-color: #fff6;
+    border: 0.2rem solid var(--header-secound-color-a);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     font-weight: bold;
 }
 
@@ -105,6 +144,10 @@ img {
     line-height: 1.2;
     letter-spacing: 0.01rem;
     padding-top: 1.5rem;
+}
+
+#selected-grid-view img {
+    cursor: pointer;
 }
 
 .selected-column-helmet { grid-column-start: 1; grid-column-end: 3; }
@@ -171,15 +214,16 @@ img {
 }
 
 #info-panel {
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
     width: 15rem;
-    padding-top: 1rem;
+    padding-top: 0.7rem;
     background-image: url(layout/context-arrow.svg);
     background-repeat: no-repeat;
-    background-size: auto 1rem;
+    background-size: auto 0.8rem;
     background-position: 50% 0;
     z-index: 100;
 }
@@ -189,9 +233,10 @@ img {
     flex-flow: column nowrap;
     justify-content: flex-start;
     padding: 0.5rem;
-    background-color: #e4dbd0bb;
+    background-color: #fffc;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    border: 0.2rem solid #00004daa;
     border-radius: 5px;
 }
 
@@ -199,6 +244,21 @@ img {
     align-self: flex-end;
     font-size: 0.75rem;
     z-index: 100;
+}
+
+#info-panel-earlier-gear {
+    width: 100%;
+}
+
+#info-panel-earlier-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+#info-panel-earlier-grid img {
+    width: 100%;
+    height: auto;
 }
 
 

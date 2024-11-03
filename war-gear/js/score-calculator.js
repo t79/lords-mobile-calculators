@@ -14,7 +14,7 @@ export class ScoreCalculator {
 
     Setup() {
         this._scorePanel = new ScoreOutputPanel();
-        this._gearSet.AddEventListener("gear-changed", (gs) => this.GearChanged(gs).bind(this));
+        this._gearSet.AddEventListener("gear-changed", (gs) => this.GearChanged(gs));
     }
 
     GearChanged(gs) {

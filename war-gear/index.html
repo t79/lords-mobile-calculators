@@ -62,33 +62,21 @@
 
         <div id="content-column">
 
-            <div id="calc-output-container2">
 
-                <div id="output-blank" class="calc-output output-col-title output-row-title"></div>
-                <div id="output-title-inf" class="calc-output output-col-inf output-row-title">Inf</div>
-                <div id="output-title-Range" class="calc-output output-col-Range output-row-title">Rangee</div>
-                <div id="output-title-cav" class="calc-output output-col-cav output-row-title">Cav</div>
-                <div id="output-title-army" class="calc-output output-col-army output-row-title">Army</div>
-                <div id="output-title-atk" class="calc-output output-col-title output-row-atk">ATK</div>
-                <div id="output-title-hp" class="calc-output output-col-title output-row-hp">HP</div>
-                <div id="output-title-def" class="calc-output output-col-title output-row-def">DEF</div>
+            <div id="filter-and-query-container">
 
-                <div id="output-inf-atk" class="calc-output output-col-inf output-row-atk"></div>
-                <div id="output-Range-atk" class="calc-output output-col-Range output-row-atk"></div>
-                <div id="output-cav-atk" class="calc-output output-col-cav output-row-atk"></div>
-                <div id="output-army-atk" class="calc-output output-col-army output-row-atk"></div>
+                <div id="filter-query-header">
+                    <img id="filter-query-caret" src="layout/square-caret-right-solid.svg">
+                    <div>Filter and Query</div>
+                </div>
 
-                <div id="output-inf-hp" class="calc-output output-col-inf output-row-hp"></div>
-                <div id="output-Range-hp" class="calc-output output-col-Range output-row-hp"></div>
-                <div id="output-cav-hp" class="calc-output output-col-cav output-row-hp"></div>
-                <div id="output-army-hp" class="calc-output output-col-army output-row-hp"></div>
+                <div id="filter-query-body">
+                    TESTING TESTING.
+                </div>
 
-                <div id="output-inf-def" class="calc-output output-col-inf output-row-def"></div>
-                <div id="output-Range-def" class="calc-output output-col-Range output-row-def"></div>
-                <div id="output-cav-def" class="calc-output output-col-cav output-row-def"></div>
-                <div id="output-army-def" class="calc-output output-col-army output-row-def"></div>
-            
+
             </div>
+
 
             <div id="calc-output-outer-container">
                 <div id="calc-output-containers">
@@ -152,20 +140,6 @@
                 <div id="sub-selected-grid-view"></div>
 
             </div>
-
-            <div id="info-panel">
-                <div id="panel-content">
-                <div class="info-panel-type">OFF-HAND</div>
-                <div>
-                    <div>History</div>
-                    <img src="" id="selected-previous-off-hand-1" class="selected-column-off-hand-previous-1 selected-row-previous-1 selected-previous">
-                    <img src="" id="selected-previous-off-hand-2" class="selected-column-off-hand-previous-2 selected-row-previous-1 selected-previous">
-                    <img src="" id="selected-previous-off-hand-3" class="selected-column-off-hand-previous-1 selected-row-previous-2 selected-previous">
-                    <img src="" id="selected-previous-off-hand-4" class="selected-column-off-hand-previous-2 selected-row-previous-2 selected-previous">
-                </div>
-                </div>
-            </div>
-
 
             <div id="grid-view-container">
                 <div id="grid-view">
@@ -487,7 +461,7 @@
                             data-type="accessory"
                             data-level="60"
                             data-title="Book of the Dead"
-                            data-spec='{
+                            data-boost='{
                                 "common": {"Inf ATK": 4, "Cav ATK": 4, "Cav DEF": 3.2, "Inf HP": 2.4},
                                 "uncommon": {"Inf ATK": 7.75, "Cav ATK": 7.75, "Cav DEF": 6.2, "Inf HP": 4.65},
                                 "rare": {"Inf ATK": 11.75, "Cav ATK": 11.75, "Cav DEF": 9.4, "Inf HP": 7.05},
@@ -614,6 +588,27 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+
+
+    <div id="info-panel">
+        <div id="panel-content">
+        <div class="info-panel-type">OFF-HAND</div>
+        <div id="info-panel-earlier-gear">
+            <div>Earlier Gear</div>
+            <div id="info-panel-earlier-grid">
+                <img id="info-panel-earlier-gear-1" class="info-panel-earlier-row-1 info-panel-earlier-column-1">
+                <img id="info-panel-earlier-gear-2" class="info-panel-earlier-row-1 info-panel-earlier-column-2">
+                <img id="info-panel-earlier-gear-3" class="info-panel-earlier-row-1 info-panel-earlier-column-3">
+                <img id="info-panel-earlier-gear-4" class="info-panel-earlier-row-1 info-panel-earlier-column-4">
+                <img id="info-panel-earlier-gear-5" class="info-panel-earlier-row-2 info-panel-earlier-column-1">
+                <img id="info-panel-earlier-gear-6" class="info-panel-earlier-row-2 info-panel-earlier-column-2">
+                <img id="info-panel-earlier-gear-7" class="info-panel-earlier-row-2 info-panel-earlier-column-3">
+                <img id="info-panel-earlier-gear-8" class="info-panel-earlier-row-2 info-panel-earlier-column-4">
+            </div>
+
+        </div>
         </div>
     </div>
 
