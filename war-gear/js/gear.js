@@ -41,9 +41,11 @@ export class Gear extends BaseClass {
         this._isSelected = value;
         if (value) {
             this._iconElm.src = this.CurrentSelectedIcon;
+            this._iconElm.style.borderWidth = "0rem";
         }
         else {
             this._iconElm.src = this.CurrentIcon;
+            this._iconElm.style.borderWidth = "0rem";
         }
     }
 
@@ -78,6 +80,7 @@ export class Gear extends BaseClass {
             this._currentType = (this._currentType + 1) % 6;
         }
         this._iconElm.src = this.CurrentSelectedIcon;
+        this._iconElm.style.borderWidth = "0rem";
         this._isSelected = true;
         this.DispatchEvent("gear-changed");
     }

@@ -28,6 +28,8 @@ export class InfoPanel {
             earlierGearSlot6: document.getElementById("info-panel-earlier-gear-6"),
             earlierGearSlot7: document.getElementById("info-panel-earlier-gear-7"),
             earlierGearSlot8: document.getElementById("info-panel-earlier-gear-8"),
+            earlierGearSlot9: document.getElementById("info-panel-earlier-gear-9"),
+            earlierGearSlot10: document.getElementById("info-panel-earlier-gear-10")
         }
     }
 
@@ -92,12 +94,14 @@ export class InfoPanel {
         }
         const earlierGear = this._gear.GetEarlierGear;
 
-        for (let i = 0; i < earlierGear.length; i++) {
+        const count = earlierGear.length > 10 ? 10 : earlierGear.length;
+
+        for (let i = 0; i < count; i++) {
             const gear = earlierGear[i];
             this._panelContentElm["earlierGearSlot" + (i + 1)].src = gear.CurrentIcon;
             this._panelContentElm["earlierGearSlot" + (i + 1)].style.display = "block";
         }
-        for (let i = earlierGear.length; i < 8; i++) {
+        for (let i = earlierGear.length; i < 10; i++) {
             this._panelContentElm["earlierGearSlot" + (i + 1)].style.display = "none";
         }
 
