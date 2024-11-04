@@ -193,14 +193,7 @@ img {
 }
 
 #grid-view img {
-    border: 0px solid #000080;
-}
-
-.gear-container {
-}
-
-#selected-grid-view div {
-    
+    border: 0 solid #000080;
 }
 
 .info-panel-arrow {

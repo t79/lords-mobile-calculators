@@ -58,7 +58,7 @@ export class SelectedGear extends BaseClass {
             this._earlierGear.push(this._gear);
             this._gear.IsSelected = false;
         }
-        this._imgElm.src = inst.CurrentSelectedIcon;
+        this._imgElm.src = inst.CurrentIcon;
         this._gear = inst;
 
     }
