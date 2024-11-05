@@ -31,6 +31,7 @@ body {
 
 #content-column {
     position: relative;
+    gap: 2rem;
 }
 
 img {
@@ -149,6 +150,81 @@ img {
 #selected-grid-view img {
     cursor: pointer;
 }
+
+#gear-grid-options-container {
+    display: flex;
+    width: min(95%, 620px);
+    flex-flow: row wrap;
+    align-items: flex-end;
+    margin-top: 3rem;
+    font-size: 0.65rem;
+}
+
+#click-behavior-toggle-container {
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 5px;
+    background-color: #fffc;
+}
+
+#click-behavior-header {
+    font-weight: bold;
+    padding-left: 0.3rem;
+    color: #000080;
+}
+
+#click-behavior-toggle-row {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 0.3rem;
+    padding-top: 0rem;
+    gap: 0.3rem;
+    line-height: 1.15;
+}
+
+#click-behavior-toggle {
+    position: relative;
+    display: block;
+    width: 1.5rem;
+    height: 1rem;
+}
+
+#click-behavior-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+
+#click-behavior-toggle input:checked + #click-behaviour-toggle-slider:before {
+    -webkit-transform: translateX(0.55rem);
+    -ms-transform: translateX(0.55rem);
+    transform: translateX(0.55rem);
+}
+
+#click-behaviour-toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #000080;
+    border-radius: 5px;
+}
+
+#click-behaviour-toggle-slider:before {
+    position: absolute;
+    content: "";
+    width: 0.4rem;
+    top: 0.1rem;
+    bottom: 0.1rem;
+    left: 0.2rem;
+    border-radius: 3px;
+    background-color: #000080;
+}
+
 
 .selected-column-helmet { grid-column-start: 1; grid-column-end: 3; }
 .selected-column-helmet-previous-1 { grid-column-start: 1; grid-column-end: 2; }
