@@ -1,5 +1,5 @@
 import { BaseClass } from "./base-class.js";
-import { GearSet } from "./gear-set.js";
+import { SelectedGearsContainer } from "./selected-gears-container.js";
 import { Gear } from "./gear.js";
 
 

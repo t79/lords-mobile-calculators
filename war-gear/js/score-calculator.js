@@ -1,5 +1,5 @@
 import { ScoreOutputPanel } from "./score-output-panel.js";
-import { GearSet } from "./gear-set.js";
+import { SelectedGearsContainer } from "./selected-gears-container.js";
 
 
 export class ScoreCalculator {

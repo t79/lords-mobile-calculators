@@ -1,6 +1,6 @@
 import { DarkLightMode, BackgroundImages } from "../../js/lordscalc.js";
 import { FilterAndQuery } from "./filter-and-query.js";
-import { GearSet } from "./gear-set.js";
+import { SelectedGearsContainer } from "./selected-gears-container.js";
 import { Monster } from "./monster.js";
 import { ScoreCalculator } from "./score-calculator.js";
 import { GearLayouts } from "./gear-layouts.js";
@@ -31,7 +31,7 @@ export class WarGear {
         this._monsters["arctic-flipper"].AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
         this._monsters["necrosis"] = new Monster("necrosis");
         this._monsters["necrosis"].AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
-        this._selectedSet = new GearSet();
+        this._selectedSet = new SelectedGearsContainer();
         this._selectedSet.AddEventListener("activate-info-panel", (inst) => this.ActivateInfoPanel(inst));
         this._selectedSet.AddEventListener("deactivate-info-panel", (inst) => this.DeactivateInfoPanel(inst));
         this._scoreCalculator = new ScoreCalculator(this._selectedSet);

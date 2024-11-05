@@ -3,7 +3,7 @@ import { SelectedGear } from "./selected-gear.js";
 
 
 
-export class GearSet extends BaseClass {
+export class SelectedGearsContainer extends BaseClass {
 
     _selected;
 
