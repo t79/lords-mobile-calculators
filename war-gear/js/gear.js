@@ -52,6 +52,14 @@ export class Gear extends BaseClass {
     get IsSelectedGearElm() {
         return false;
     }
+    
+    get LowerCenterPoint() {
+        const rect = this._iconElm.getBoundingClientRect();
+        return { 
+            x: rect.left + rect.width / 2,
+            y: rect.top + rect.height
+        }
+    }
 
     constructor(id, gearType) {
         super();
@@ -82,7 +90,11 @@ export class Gear extends BaseClass {
         this._iconElm.src = this.CurrentSelectedIcon;
         this._iconElm.style.borderWidth = "0.15rem";
         this._isSelected = true;
-        this.DispatchEvent("gear-changed");
+        this.DispatchEvent("gear-clicked");
+    }
+
+    LostInfoPanel() {
+
     }
 
     _attributes = {

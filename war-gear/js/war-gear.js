@@ -1,16 +1,14 @@
 import { DarkLightMode, BackgroundImages } from "../../js/lordscalc.js";
 import { FilterAndQuery } from "./filter-and-query.js";
 import { SelectedGearsContainer } from "./selected-gears-container.js";
-import { Monster } from "./monster.js";
 import { ScoreCalculator } from "./score-calculator.js";
-import { GearLayouts } from "./gear-layouts.js";
 import { InfoPanel } from "./info-panel.js";
+import { GearsContainer } from "./gears-container.js";
 
 export class WarGear {
 
-    _monsters = {}
-    _monster2;
-    _selectedSet;
+    _gears;
+    _selectedGears;
     _scoreCalculator;
     _filterAndQuery;
     _gearLayouts;
@@ -21,41 +19,49 @@ export class WarGear {
     }
 
     Setup() {
-        
+        this.SetupLayoutAndPanels();
+        this.SetupGears();
+        this.SetupSelectedGears();
+        this.SetupSetupFilterAndCalculationLogic();
+    }
+
+    SetupSetupFilterAndCalculationLogic() {
+        this._scoreCalculator = new ScoreCalculator(this._selectedGears);
+        this._filterAndQuery = new FilterAndQuery();
+    }
+
+    SetupSelectedGears() {
+        this._selectedGears = new SelectedGearsContainer();
+        this._selectedGears.AddEventListener("activate-info-panel", (inst) => this.ActivateInfoPanel(inst));
+        this._selectedGears.AddEventListener("deactivate-info-panel", (inst) => this.DeactivateInfoPanel(inst));
+    }
+
+    SetupGears() {
+        this._gears = new GearsContainer();
+        this._gears.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
+        this._gears.AddEventListener("activate-info-panel", (inst) => this.ActivateInfoPanel(inst));
+        this._gears.AddEventListener("deactivate-info-panel", (inst) => this.DeactivateInfoPanel(inst));
+    }
+
+    SetupLayoutAndPanels() {
         DarkLightMode.setupButton();
         BackgroundImages.setImages();
-
-        this._monsters["serpent-gladiator"] = new Monster("serpent-gladiator");
-        this._monsters["serpent-gladiator"].AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
-        this._monsters["arctic-flipper"] = new Monster("arctic-flipper");
-        this._monsters["arctic-flipper"].AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
-        this._monsters["necrosis"] = new Monster("necrosis");
-        this._monsters["necrosis"].AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
-        this._selectedSet = new SelectedGearsContainer();
-        this._selectedSet.AddEventListener("activate-info-panel", (inst) => this.ActivateInfoPanel(inst));
-        this._selectedSet.AddEventListener("deactivate-info-panel", (inst) => this.DeactivateInfoPanel(inst));
-        this._scoreCalculator = new ScoreCalculator(this._selectedSet);
-        this._filterAndQuery = new FilterAndQuery();
-        this._gearLayouts = new GearLayouts(this._monsters);
         this._infoPanel = new InfoPanel();
-        //this._gearLayouts.Reverse();
-
         window.addEventListener("resize", () => { this.PageResized(); });
     }
 
     GearChanged(instance) {
-        console.log("Got event " + instance.Id);
-
-        this._selectedSet.SetGear(instance);
+        console.log("GearChanged");
+        this._selectedGears.SetGear(instance);
         this._infoPanel.UpdateContent();
     }
 
     ActivateInfoPanel(inst) {
+        console.log("ActivateInfoPanel");
         this._infoPanel.SetPanel(inst);
     }
 
     DeactivateInfoPanel(inst) {
-        console.log("Deactivate info panel");
         this._infoPanel.HidePanel();
     }
 

@@ -28,7 +28,6 @@ export class ScoreCalculator {
                     if (value != undefined) {
                         const key2m = key2.slice(0, 1).toUpperCase() + key2.slice(1).toLowerCase()
                         result[key1 + key2m] = (result[key1 + key2m] || 0) + value;
-                        console.log("Boost: " + key1 + " " + key2 + ": " + value);
                     }
                 });
             });
@@ -36,7 +35,6 @@ export class ScoreCalculator {
 
         Object.keys(result).forEach(key=> {
             eval(`this._scorePanel.${key} = ${result[key]}`);
-            console.log("Result: " + key + ": " + result[key]);
         });
     }
 }

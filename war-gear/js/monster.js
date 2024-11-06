@@ -29,22 +29,16 @@ export class Monster extends BaseClass {
             accessory2: new Gear(this._id, this._gearTypes["ACCESSORY_2"]),
             accessory3: new Gear(this._id, this._gearTypes["ACCESSORY_3"])
         }
-        this._gear.helmet.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
-        this._gear.armor.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
-        this._gear.legs.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
-        this._gear.mainHand.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
-        this._gear.offHand.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
-        this._gear.accessory1.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
-        this._gear.accessory2.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
-        this._gear.accessory3.AddEventListener("gear-changed", (inst) => this.GearChanged(inst));
 
+        Object.values(this._gear).forEach((gear) => {
+            gear.AddEventListener("gear-clicked", (inst) => this.DispatchEvent("gear-clicked", inst));
+        });
+        
         this._styleRoot = document.querySelector(":root");
     }
 
-    GearChanged(instance) {
-        console.log("Got event" + instance.Id);
-
-        this.DispatchEvent("gear-changed", instance);
+    GearChanged(gear) {
+        this.DispatchEvent("gear-clicked", gear);
     }
 
     LayoutChangeToRow(index) {
